@@ -18,9 +18,6 @@ Le opzioni tra cui scegliere sono due:
 
 -   Regular Tags
 
-```{=html}
-<!-- -->
-```
 -   Markdown/Seasonal Tags
 
 ![screenshot procedura](./img/image415.png)
@@ -44,9 +41,6 @@ premendo sul tasto Ricerca codice UPC, come riportato in figura.
     stampare più etichette di UPC differenti (per esempio Price
     increase). Per ottenere le etichette si può:
 
-```{=html}
-<!-- -->
-```
 -   Inserire una lista di UPC all'interno della sezione corrispondente
 
 -   Cercare per Merch Cat, ovvero il codice assegnato a ciascun brand
