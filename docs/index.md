@@ -1,18 +1,12 @@
 ---
-title: "KB Ciao! — Manuale Operativo"
+title: "Ciao! — Manuale Operativo"
 ---
 
 # KB Ciao! — Manuale Operativo
 
 Base di conoscenza del sistema di cassa **Ciao!** e degli applicativi correlati (Ciao! Optical, LPA, Order Tracker, Smart Shopper), riorganizzata a partire dal manuale operativo.
 
-## Come usare questa KB
-
-- Usa la **ricerca** in alto per trovare rapidamente una procedura.
-- Naviga per argomento dal menu a sinistra: la struttura ricalca l'indice originale del manuale (apertura/chiusura negozio, anagrafica cliente, creazione WO, vendite, resi e scambi, reporting, operatività di cassa, ecc.).
-- Ogni pagina corrisponde a un capitolo del manuale, con gli screenshot originali incorporati.
-
-## Indice rapido
+# Indice rapido
 
 | # | Argomento |
 |---|---|
