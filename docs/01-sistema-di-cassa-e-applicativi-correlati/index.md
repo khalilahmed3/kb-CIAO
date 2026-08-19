@@ -186,14 +186,14 @@ attraverso il Tool Kit, selezionando Order Tracker.
 Tra le novità che derivano dall'adozione di Ciao! Optical come nuovo
 sistema di cassa ci sono alcune migliorie che riguardo Order Tracker:
 
--   Quando un WO viene consegnato al cliente e scontrinato in cassa, [il
+-   Quando un WO viene consegnato al cliente e scontrinato in cassa, **il
     record dell'ordine ad esso riferito viene in automatico identificato
-    come consegnato]{.underline} e si cancella dalla lista degli ordini
+    come consegnato** e si cancella dalla lista degli ordini
     ancora in gestione presente in Order Tracker.
 
-> Di conseguenza non si rende più necessario effettuare la procedura
-> manuale per indicare che è un ordine è stato consegnato (DISPENSED)
-> perché questo processo è automatico.
+ **Di conseguenza non si rende più necessario effettuare la procedura manuale per indicare che è un ordine è stato consegnato (DISPENSED) perché questo processo è automatico.**
+
+
 
 -   Nella sezione PRODUCT TO COME è possibile monitorare anche gli
     ordini di lenti a contatto indirizzati al negozio.
