@@ -129,11 +129,11 @@ voce in basso a destra Aggiungi prescrizione
 
 Cliccando su questo tasto il sistema vi riporta direttamente nella
 schermata per l\'inserimento della prescrizione. Il dato di origine e il
-nome dell\'ottico/ medico oculista [verranno riportati
-automaticamente]{.underline} senza che vengano reinseriti.
+nome dell\'ottico/ medico oculista <u>verranno riportati
+automaticamente</u> senza che vengano reinseriti.
 
-In più sempre in questa schermata potrete [aggiungere anche un\'altra
-prescrizione,]{.underline} premendo il tasto *Aggiungere Altro*, che
+In più sempre in questa schermata potrete <u>aggiungere anche un\'altra
+prescrizione,</u> premendo il tasto *Aggiungere Altro*, che
 apre una nuova schermate di prescrizione.
 
 ![screenshot procedura](./img/image101.png)
@@ -151,8 +151,8 @@ di scontrino a zero cliccando su *Procedi al pagamento*.
 
 Cliccare su *Transazione completata* per concludere la registrazione. Di
 conseguenza, cliccando su *Stampa* la scontrinatrice fiscale emette un
-documento gestionale riportante un servizio a valore 0. [Questo
-documento gestionale non è da consegnare al cliente]{.underline}.
+documento gestionale riportante un servizio a valore 0. <u>Questo
+documento gestionale non è da consegnare al cliente</u>.
 
 ![screenshot procedura](./img/image103.png)
 
@@ -170,8 +170,9 @@ dei dati medici nell'anagrafica del cliente, accedere al *Profilo*
 *Cliente*, cliccare su *Gestisci Prescrizioni* e successivamente su
 *Aggiungi prescrizione.*
 
--   ![screenshot procedura](./img/image106.png)Il primo campo da compilare è
-    l'origine. Ci sono quattro opzioni:
+![screenshot procedura](./img/image106.png)
+
+Il primo campo da compilare è l'origine. Ci sono quattro opzioni:
 
 -   Check up
 
@@ -183,7 +184,8 @@ dei dati medici nell'anagrafica del cliente, accedere al *Profilo*
 
 Successivamente compilare anche i seguenti campi:
 
-![screenshot procedura](./img/image107.png)![screenshot procedura](./img/image109.png)![screenshot procedura](./img/image110.png)![screenshot procedura](./img/image111.png)
+![screenshot procedura](./img/image107.png)![screenshot procedura](./img/image109.png)![screenshot procedura](./img/image110.png)
+![screenshot procedura](./img/image111.png)
 
 ![Immagine che contiene testo Descrizione generata automaticamente](./img/image112.png)![screenshot procedura](./img/image117.png)![screenshot procedura](./img/image118.png)Cliccare su *Continua* per attivare la
 raccolta dei consensi medici. Il rilascio dei consensi privacy per i
