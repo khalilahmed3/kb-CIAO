@@ -15,8 +15,8 @@ Per questo motivo si consiglia di eseguire tale processo utilizzando
 l'iPad. L'iPad va tenuto orizzontalmente per permettere la corretta
 visualizzazione della schermata di Ciao! Optical.
 
-Per avviare Ciao! Optical da iPad, cliccare [l'icona dell'app
-XStore]{.underline} rossa nel riquadro in figura (NON l'icona Ciao!)
+Per avviare Ciao! Optical da iPad, cliccare <u>l'icona dell'app
+XStore</u> rossa nel riquadro in figura (NON l'icona Ciao!)
 
 ## Ricerca cliente esistente
 
@@ -28,27 +28,33 @@ schermata che si apre è quella relativa alla ricerca cliente.
 È possibile accedere a questa pagina anche cliccando sull'icona del menù
 in basso a sinistra e successivamente su *Ricerca Cliente*.
 
-![screenshot procedura](./img/image47.png)![screenshot procedura](./img/image49.png)![screenshot procedura](./img/image50.png)
+![screenshot procedura](./img/image47.png)
+
+![screenshot procedura](./img/image49.png)
+
+![screenshot procedura](./img/image50.png)
 
 Per dare avvio alla ricerca, è necessario inserire almeno uno di
 questi campi:
 
--   [ID Scontrino]{.underline} (barcode presente sullo scontrino fiscale
+-   <u>ID Scontrino</u> (barcode presente sullo scontrino fiscale
     scansionabile con il lettore ottico o con fotocamera iPad cliccando
     su *Cattura ID scontrino*).
 
--   [Nome + Cognome]{.underline} (almeno le prime 2 lettere del cognome
+-   <u>Nome + Cognome</u> (almeno le prime 2 lettere del cognome
     e la prima lettera del nome)
 
--   [Indirizzo e-mail]{.underline}
+-   <u>Indirizzo e-mail</u>
 
--   [Numero di telefono cellulare]{.underline} (almeno le prime 7 cifre)
+-   <u>Numero di telefono cellulare</u> (almeno le prime 7 cifre)
 
 *Il database vendite e clienti di Ciao! è condiviso tra tutti i negozi
 della rete Salmoiraghi & Viganò e i Monobrand. Non è possibile visionare
 o ricercare vendite effettuate su negozi in franchising*
 
-![screenshot procedura](./img/image51.png)![Immagine che contiene testo Descrizione generata automaticamente](./img/image52.png)
+![screenshot procedura](./img/image51.png)
+
+![Immagine che contiene testo Descrizione generata automaticamente](./img/image52.png)
 
 Cliccare su *Cerca* per visualizzare i risultati della ricerca.
 
@@ -120,7 +126,17 @@ consensi per le anagrafiche preesistenti (importate da Acuitas).
 Dopo aver cliccato su *+Nuovo cliente*, inserire le informazioni del
 cliente nella scheda *Aggiungi Cliente*:
 
-![screenshot procedura](./img/image62.png)![screenshot procedura](./img/image63.png)![screenshot procedura](./img/image64.png)![screenshot procedura](./img/image65.png)![screenshot procedura](./img/image63.png)![screenshot procedura](./img/image63.png)
+![screenshot procedura](./img/image62.png)
+
+![screenshot procedura](./img/image63.png)
+
+![screenshot procedura](./img/image64.png)
+
+![screenshot procedura](./img/image65.png)
+
+![screenshot procedura](./img/image63.png)
+
+![screenshot procedura](./img/image63.png)
 
 Le informazioni minime obbligatorie per poter creare un profilo
 cliente sono:
@@ -128,7 +144,7 @@ cliente sono:
 A.  Nome + Cognome
 
 B.  Indirizzo e-mail (nel caso in cui il cliente non ne disponesse,
-    inserire [sempre]{.underline} questo indirizzo e-mail fittizio:
+    inserire <u>sempre</u> questo indirizzo e-mail fittizio:
     <fittizio@luxottica.com> -- e assicurarsi di raccogliere almeno un
     contatto alternativo per comunicare con il cliente)
 
@@ -152,7 +168,11 @@ tutore legale. Cliccare su *Tutore legale* e poi su *Continua* per
 accedere alla pagina dove inserire le informazioni richieste per il
 tutore legale:
 
-![screenshot procedura](./img/image66.png)![screenshot procedura](./img/image67.png)![screenshot procedura](./img/image72.png)
+![screenshot procedura](./img/image66.png)
+
+![screenshot procedura](./img/image67.png)
+
+![screenshot procedura](./img/image72.png)
 
 Nel caso in cui venga aggiunto un tutore legale, inserire la mail del
 tutore legale sia nell'anagrafica del cliente sia in quella del tutore
@@ -163,8 +183,9 @@ Per salvare l'anagrafica cliccare su *Aggiungi cliente.*
 
 ## Raccolta consensi marketing
 
-![screenshot procedura](./img/image73.png)La raccolta dei consensi marketing è
-sempre richiesta durante la creazione di un nuovo cliente. Inoltre, è
+![screenshot procedura](./img/image73.png)
+
+La raccolta dei consensi marketing èsempre richiesta durante la creazione di un nuovo cliente. Inoltre, è
 necessario raccogliere nuovamente i consensi nel caso di modifica di
 almeno uno dei flag di profilazione marketing o ricezione di
 comunicazioni (via e-mail o SMS). *Nel caso in cui venisse flaggato il
@@ -208,9 +229,9 @@ C.  Modalità non preferibile -- Stampa del documento e firma su
     consenso tramite firma dell'informativa in formato cartaceo
     cliccando su *Stampa.*
 
-[Solo in questo ultimo caso è necessario archiviare la copia
+<u>Solo in questo ultimo caso è necessario archiviare la copia
 dell'informativa cartacea firmata dal cliente e conservarla per 10 anni
-in negozio.]{.underline} Per tutte le altre modalità di raccolta del
+in negozio.</u> Per tutte le altre modalità di raccolta del
 consenso l'informativa viene salvata all'interno del sistema. È sempre
 possibile verificare la modalità di raccolta del consenso all'interno
 del *Profilo Cliente*.
