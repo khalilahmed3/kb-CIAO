@@ -2,7 +2,7 @@
 title: "Ciao! — Manuale Operativo"
 ---
 
-# KB Ciao! — Manuale Operativo
+#Ciao! — Manuale Operativo
 
 Base di conoscenza del sistema di cassa **Ciao!** e degli applicativi correlati (Ciao! Optical, LPA, Order Tracker, Smart Shopper), riorganizzata a partire dal manuale operativo.
 
