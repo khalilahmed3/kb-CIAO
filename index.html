@@ -1,0 +1,819 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-i18n="app_title">Ciao Work order issue</title>
+  <style>
+ :root {
+ --bg1: rgba(0,255,255,0.14);
+ --bg2: rgba(255,0,255,0.13);
+ --bg3a: #03020a;
+ --bg3b: #100022;
+ --panel: rgba(10, 8, 24, 0.78);
+ --panel-strong: rgba(18, 14, 42, 0.92);
+ --panel-soft: rgba(255,255,255,0.055);
+ --line: rgba(0,255,255,0.24);
+ --line-hot: rgba(255,0,255,0.28);
+ --text: #f7fbff;
+ --muted: #b8c4d9;
+ --accent1: #ff4d1f;
+ --accent2: #ff00ff;
+ --accent3: #00ffff;
+ --btn-bg: linear-gradient(135deg, #ff4d1f, #ff00ff);
+ --btn-bg-hover: linear-gradient(135deg, #00ffff, #ff00ff);
+ --radius: 10px;
+ --shadow-cyber: 0 18px 60px rgba(0,0,0,.45), 0 0 28px rgba(0,255,255,.22), 0 0 52px rgba(255,0,255,.12);
+ }
+ * { box-sizing: border-box; }
+ html { min-height: 100%; }
+ body {
+ min-height: 100vh;
+ font-family: "Segoe UI", Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background:
+ radial-gradient(circle at 18% 14%, rgba(0,255,255,.18), transparent 26%),
+ radial-gradient(circle at 84% 12%, rgba(255,0,255,.16), transparent 28%),
+ linear-gradient(120deg, var(--bg1), transparent 42%),
+ linear-gradient(240deg, var(--bg2), transparent 42%),
+ linear-gradient(0deg, var(--bg3a), var(--bg3b));
+ background-size: 160% 160%, 140% 140%, 200% 200%, 200% 200%, 100% 100%;
+ animation: cyberMove 14s linear infinite;
+ color: var(--text);
+ overflow-x: hidden;
+ }
+ body::before {
+ content: "";
+ position: fixed;
+ inset: 0;
+ pointer-events: none;
+ background-image:
+ linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+ linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+ background-size: 44px 44px;
+ mask-image: linear-gradient(to bottom, rgba(0,0,0,.55), transparent 78%);
+ }
+ @keyframes cyberMove { 0%{background-position:0% 50%,100% 0%,0% 50%,100% 50%,0 0} 100%{background-position:100% 50%,0% 100%,100% 50%,0% 50%,0 0} }
+ .brand-left,.brand-right{position:fixed;top:16px;z-index:1000;display:flex;align-items:center;gap:10px;min-height:46px;padding:8px 12px;border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);background:rgba(3,2,10,.46);box-shadow:0 0 20px rgba(0,255,255,.12);backdrop-filter:blur(10px)}
+ .brand-left{left:16px} .brand-right{right:16px}
+ .brand-left img{height:34px;width:auto;display:block;filter:drop-shadow(0 0 8px rgba(0,255,255,.55))}
+ .brand-right strong{font-weight:700;letter-spacing:.4px;color:#fff;text-shadow:0 0 8px rgba(0,255,255,.35),0 0 14px rgba(255,0,255,.25);font-size:16px;white-space:nowrap}
+ .page-top-spacer{height:92px;width:100%}
+ #app{width:min(1120px,calc(100% - 32px));margin:0 auto 36px;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,.075), rgba(255,255,255,.035)), var(--panel);border:1px solid rgba(0,255,255,.22);border-radius:14px;box-shadow:var(--shadow-cyber);backdrop-filter:blur(16px);position:relative;overflow:hidden}
+ #app::before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,var(--accent3),var(--accent2),var(--accent1));box-shadow:0 0 18px rgba(0,255,255,.65);pointer-events:none}
+ .app-header{display:grid;grid-template-columns:1fr;align-items:start;gap:18px;margin-bottom:24px;position:relative;text-align:center;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.1)}
+ h1{margin:0;text-align:center;text-shadow:0 0 8px var(--accent3),0 0 18px rgba(255,0,255,.55);font-size:clamp(1.8rem,4vw,3rem);line-height:1.05;letter-spacing:0;text-transform:uppercase}
+ h1::after{content:"Troubleshooting dashboard";display:block;margin-top:10px;color:var(--muted);font-size:.82rem;font-weight:500;letter-spacing:.4px;text-transform:none;text-shadow:none}
+ .step-title{margin:0 0 12px;text-align:center;font-size:clamp(1.25rem,2vw,1.65rem);line-height:1.25;color:#fff;text-shadow:0 0 12px rgba(0,255,255,.28)}
+ .text-center{text-align:center;color:var(--muted);margin:0 0 22px}.text-center strong{color:#fff;font-weight:600}
+ .visually-hidden,.sr-only{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap;border:0;padding:0;margin:-1px}
+ .step{display:none;margin:0}.step.is-active{display:block}
+ .buttons-center{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px;width:100%}
+ .btn,.btn-secondary{appearance:none;color:#fff;border:1px solid rgba(255,255,255,.14);padding:13px 16px;margin:0;cursor:pointer;border-radius:var(--radius);font-size:14px;font-weight:700;letter-spacing:.35px;text-transform:uppercase;transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease, background .22s ease;min-height:52px}
+ .btn{background:linear-gradient(180deg, rgba(255,255,255,.1), rgba(255,255,255,.03)), var(--btn-bg);box-shadow:0 10px 24px rgba(0,0,0,.28),0 0 14px rgba(255,60,0,.32),0 0 22px rgba(255,0,255,.2);position:relative;overflow:hidden}
+ .btn::before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent,rgba(255,255,255,.24),transparent);transform:translateX(-120%);transition:transform .45s ease}.btn:hover::before{transform:translateX(120%)}
+ .btn:hover,.btn-secondary:hover{transform:translateY(-2px);border-color:rgba(0,255,255,.55);box-shadow:0 14px 32px rgba(0,0,0,.32),0 0 18px rgba(0,255,255,.5),0 0 30px rgba(255,0,255,.32);background:linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.04)), var(--btn-bg-hover)}
+ .btn:focus-visible,.btn-secondary:focus-visible,.inline-input:focus-visible{outline:2px solid var(--accent3);outline-offset:3px}
+ .btn-secondary{background:rgba(255,255,255,.08);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06),0 0 14px rgba(0,255,255,.1);text-transform:none;letter-spacing:.2px;min-height:38px;padding:9px 12px}
+ .bottom-actions{display:flex;justify-content:space-between;gap:10px;margin-top:18px;flex-wrap:wrap}
+ .image-links{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px}.help-image{width:150px;height:110px;object-fit:cover;border-radius:var(--radius);cursor:pointer;transition:.25s;box-shadow:0 0 12px rgba(0,0,0,.4)}.help-image:hover{transform:scale(1.05);box-shadow:0 0 20px rgba(0,255,255,.8)}
+ ol,ul{padding-left:20px}li{color:#ffd3d3;margin-bottom:8px;line-height:1.45}p{line-height:1.55}.lang-switcher{display:flex;gap:8px;justify-content:center;align-items:center;flex-wrap:wrap}
+ h1,h2,h3,h4,.step-title{text-align:center;}
+ #steps:focus { outline: none; }
+ .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.82); backdrop-filter: blur(8px); }
+ .modal img { max-width: 90%; max-height: 90%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: var(--radius); box-shadow: 0 0 28px rgba(0,255,255,0.42); }
+ .modal-close { position: absolute; top: 20px; right: 24px; color: white; font-size: 30px; cursor: pointer; z-index: 2; }
+ @media (max-width: 860px){.app-header{grid-template-columns:1fr;text-align:center}.lang-switcher{justify-content:center}h1{text-align:center}.buttons-center{grid-template-columns:repeat(2,minmax(0,1fr))}}
+ @media (max-width: 560px){.brand-left,.brand-right{position:static;margin:10px 16px 0;justify-content:center}.page-top-spacer{height:18px}#app{width:calc(100% - 20px);padding:20px 14px;margin-bottom:20px}.buttons-center{grid-template-columns:1fr}.btn{min-height:50px}.lang-switcher .btn-secondary{flex:1 1 130px}}
+ .global-back-button-container { text-align: center; margin-top: 22px; }
+ #globalBackButton { display: none; }
+ .modal-content {
+ background: linear-gradient(180deg, rgba(255,255,255,.075), rgba(255,255,255,.035)), var(--panel-strong);
+ margin: 10vh auto;
+ padding: 22px;
+ border: 1px solid rgba(0,255,255,.34);
+ width: min(640px, calc(100% - 32px));
+ max-height: 80vh;
+ border-radius: 14px;
+ box-shadow: var(--shadow-cyber);
+ position: relative;
+ }
+ .inline-input { background: transparent; border: none; border-bottom: 1px solid var(--accent3); color: #ffd3d3; padding: 2px 6px; margin-left: 5px; outline: none; width: min(250px, 100%); }
+ .rephrase-btn { background: linear-gradient(135deg, var(--accent2), var(--accent3)); border: none; color: white; border-radius: 7px; cursor: pointer; padding: 4px 9px; font-size: 12px; margin-left: 6px; transition: opacity 0.2s, transform .2s; }
+ .rephrase-btn:hover { opacity: 0.86; transform: translateY(-1px); }
+ .search-result-item { background: rgba(255,255,255,0.06); border: 1px solid rgba(0,255,255,0.2); padding: 15px; margin-bottom: 10px; border-radius: var(--radius); cursor: pointer; transition: all 0.2s ease; }
+ .search-result-item:hover { background: rgba(0,255,255,0.11); border-color: var(--accent3); transform: translateY(-2px); }
+ .section-toolbar{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;margin:0 0 14px}
+ .section-toolbar .step-title{margin:0}
+ .search-box{display:flex;align-items:center;gap:8px;min-width:min(100%,360px);padding:6px;border:1px solid rgba(0,255,255,.24);border-radius:var(--radius);background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px rgba(255,255,255,.04),0 0 18px rgba(0,255,255,.1)}
+ .search-input{flex:1;min-width:0;background:transparent;border:0;color:var(--text);font:inherit;font-size:14px;outline:0;padding:8px 10px}
+ .search-input::placeholder{color:rgba(247,251,255,.58)}
+ .search-btn{min-height:38px;padding:8px 13px;font-size:12px;white-space:nowrap}
+ @media (max-width: 720px){.section-toolbar{display:grid;grid-template-columns:1fr;gap:12px}.search-box{width:100%;min-width:0}.search-btn{padding-left:10px;padding-right:10px}}
+ #step_ciao_selection .buttons-center { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; }
+ #step_ciao_selection .btn { min-width: 250px; }
+ </style>
+</head>
+<body>
+<!-- BRAND -->
+<div class="brand-left"><img src="images/dxc.png" alt="DXC"></div>
+<div class="brand-right"><strong>EssilorLuxottica</strong></div>
+<div class="page-top-spacer"></div>
+
+
+
+  <div id="app" role="application" aria-live="polite">
+    <header class="app-header">
+      
+      <h1>Web App Dashboard</h1>
+      
+      <div class="lang-switcher" aria-label="Language switcher">
+        <button type="button" class="btn-secondary" onclick="setLanguage('it')" data-i18n="btn_lang_it">Italiano  🇮🇹</button>
+        <button type="button" class="btn-secondary" onclick="setLanguage('en')" data-i18n="btn_lang_en">English 🇬🇧</button>
+      </div>
+    </header>
+
+    <main id="steps" tabindex="-1">
+      <section id="step1" class="step is-active" aria-labelledby="step2A-title">
+                <div class="section-toolbar">
+          <h2 id="step2A-title" class="step-title" data-i18n="landing_title">Tipologie di problematiche</h2>
+          <div class="search-box" role="search">
+            <input type="search" id="stepSearch" class="search-input" placeholder="Cerca una problematica..." aria-label="Cerca una problematica" data-i18n-placeholder="search_placeholder">
+            <button type="button" class="btn-secondary search-btn" onclick="performSearch()" data-i18n="search_btn">CERCA</button>
+          </div>
+        </div>
+        
+        <div class="buttons-center">
+          <button type="button" class="btn" data-next="step_ciao_selection" data-i18n="btn_ciao_menu">CIAO</button>
+          <button type="button" class="btn" data-url="https://khalilahmed3.github.io/ipad_troubleshooter/" data-i18n="btn_ipad_troubleshooting">Ipad Troubleshooting</button>
+          <button type="button" class="btn" data-url="https://khalilahmed3.github.io/POS_troubleshooting/" data-i18n="btn_pos_troubleshooting">POS Troubleshooting</button>
+          <button type="button" class="btn" data-url="https://khalilahmed3.github.io/RESET_PASSWORD/" data-i18n="btn_reset_password">Reset password</button>
+          <button type="button" class="btn" data-url="https://khalilahmed3.github.io/Stampante-A4/" data-i18n="btn_printer_a4">Stampante-A4 issue</button>
+          <button type="button" class="btn" data-url="https://khalilahmed3.github.io/Fiscal_printer/" data-i18n="btn_fiscal_printer">Fiscal Printer</button>
+          <button type="button" class="btn" data-url="https://khalilahmed3.github.io/optic_not_found/" data-i18n="btn_fatal_error">Ottico non Trovato</button>
+          <button type="button" class="btn" data-url="https://khalilahmed3.github.io/Tracer/" data-i18n="btn_tracer">Tracer</button>
+          <button type="button" class="btn" data-url="https://khalilahmed3.github.io/Store_Database/" data-i18n="btn_negozio">Informazioni negozio</button>
+          <button type="button" class="btn" data-url="https://khalilahmed3.github.io/Knowledg-Base-Toolkit/" data-i18n="btn_Toolkit">Toolkit applicazioni</button>
+        </div>
+      </section>
+      <section id="step_ciao_selection" class="step" aria-labelledby="ciao-selection-title">
+        <h2 id="ciao-selection-title" class="step-title" data-i18n="ciao_selection_title">Moduli CIAO</h2>
+        <div class="buttons-center">
+          <button type="button" class="btn" data-url="https://khalilahmed3.github.io/CIAO-SERVER/" data-i18n="btn_ciao_server">Ciao Server</button>
+          <button type="button" class="btn" data-url="https://khalilahmed3.github.io/ciao-aplication-issue/" data-i18n="btn_ciao_app_issue">Ciao Application Issue</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pulsante Indietro Globale centralizzato -->
+    <div class="global-back-button-container">
+      <button type="button" id="globalBackButton" class="btn-secondary" data-i18n="btn_back">⬅ Indietro</button>
+    </div>
+</div> <!-- END APP -->
+
+<!-- Modal per immagini ingrandite -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="modal-close" onclick="closeModal()" aria-label="Chiudi">&times;</span>
+  <img id="modalImage" src="" alt="">
+</div>
+
+<!-- Modal per risultati di ricerca -->
+<div id="searchResultsModal" class="modal" onclick="closeSearchResultsModal()">
+  <span class="modal-close" onclick="closeSearchResultsModal()" aria-label="Chiudi">&times;</span>
+  <div class="modal-content">
+    <h3 style="color: white; text-align: center; margin-bottom: 20px;">Risultati della ricerca</h3>
+    <div id="searchResultsList" style="max-height: 70vh; overflow-y: auto; padding: 10px;"></div>
+  </div>
+</div>
+
+<script>
+/* ===========================
+   I18N – TRADUZIONI IT / EN
+=========================== */
+
+const translations = {
+ it: {
+  app_title: "Ciao Work order issue",
+  btn_next: "AVANTI",
+  btn_back: "⬅ Indietro",
+  btn_copy: "Copia cronologia",
+  yes: "SÌ",
+  no: "NO",
+  copy_success: "Troubleshooting copiato negli appunti!",
+  copy_error: "Errore durante la copia negli appunti.",
+  btn_lang_it: "Italiano 🇮🇹",
+  btn_lang_en: "English 🇬🇧",
+  search_instr: "È possibile anche cercare per parola chiave",
+  search_btn: "CERCA",
+  search_placeholder: "Cerca una problematica...",
+  landing_title: "Tipologie di problematiche",
+  ciao_optical_software: "Ciao Optical software",
+  btn_ciao_server: "Ciao Server",
+  btn_ciao_app_issue: "Problemi Applicazione Ciao",
+  btn_ipad_troubleshooting: "Troubleshooting iPad",
+  btn_pos_troubleshooting: "Troubleshooting POS",
+  btn_reset_password: "Reset password",
+  btn_printer_a4: "Problemi Stampante A4",
+  btn_fiscal_printer: "Stampante Fiscale",
+  btn_fatal_error: "Ottico non Trovato",
+  btn_tracer: "Tracer",
+  btn_negozio: "Informazioni negozio",
+  btn_Toolkit: "Toolkit applicazioni",
+  btn_ciao_menu: "CIAO",
+  ciao_selection_title: "Seleziona modulo CIAO",
+ },
+
+ en: {
+  app_title: "Ciao Work order issue",
+  btn_next: "NEXT",
+  btn_back: "⬅ Back",
+  btn_copy: "Copy troubleshooting",
+  yes: "YES",
+  no: "NO",
+  copy_success: "Troubleshooting copied to clipboard!",
+  copy_error: "Unable to copy to clipboard.",
+  btn_lang_it: "Italiano 🇮🇹",
+  btn_lang_en: "English 🇬🇧",
+  search_instr: "You can also search by keyword",
+  search_btn: "SEARCH",
+  search_placeholder: "Search an issue...",
+  landing_title: "Types of issues",
+  ciao_optical_software: "Ciao Optical software",
+  btn_ciao_server: "Ciao Server",
+  btn_ciao_app_issue: "Ciao Application Issue",
+  btn_ipad_troubleshooting: "iPad Troubleshooting",
+  btn_pos_troubleshooting: "POS Troubleshooting",
+  btn_reset_password: "Reset Password",
+  btn_printer_a4: "A4 Printer Issue",
+  btn_fiscal_printer: "Fiscal Printer",
+  btn_fatal_error: "Optician Not Found",
+  btn_tracer: "Tracer",
+  btn_negozio: "Store information",
+  btn_Toolkit: "Applications Toolkit",
+  btn_ciao_menu: "CIAO",
+  ciao_selection_title: "Select CIAO module",
+ }
+};
+
+/**
+ * Gestisce il cambio lingua aggiornando gli elementi con l'attributo data-i18n.
+ */
+let currentLanguage = 'it';
+function setLanguage(lang) {
+  currentLanguage = lang;
+  const t = translations[lang];
+  if (!t) return;
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (t[key]) {
+      el.setAttribute('placeholder', t[key]);
+      el.setAttribute('aria-label', t[key]);
+    }
+  });
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (t[key]) {
+      if (el.getAttribute('data-i18n-type') === 'html') {
+        el.innerHTML = t[key];
+      } else {
+        el.innerText = t[key];
+      }
+    }
+  });
+}
+
+/* ===========================
+   NAVIGAZIONE
+=========================== */
+
+// Stato di navigazione
+const historyStack = [];
+let currentStepId = "step1";
+const clickTrail = [];
+
+function looksLikeHtml(str) {
+  const s = String(str || "");
+  return /<[^>]+>/.test(s) || /&[a-zA-Z#0-9]+;/.test(s);
+}
+
+function stripHTML(html) {
+  const tmp = document.createElement("div");
+  tmp.innerHTML = html;
+  return (tmp.textContent || tmp.innerText || "").trim();
+}
+
+function getTextFromI18n(el, langCode) {
+  const key = el.getAttribute("data-i18n");
+  const type = el.getAttribute("data-i18n-type");
+  if (key) {
+    let val = (translations[langCode] && translations[langCode][key]) || (translations.it && translations.it[key]) || "";
+    if (!val) return el.innerText.trim();
+    if (type === "html" || looksLikeHtml(val)) return stripHTML(val);
+    return String(val).trim();
+  }
+  // Gestione per elementi figli con traduzione (es: li > span)
+  const i18nChild = el.querySelector('[data-i18n]');
+  if (i18nChild) return getTextFromI18n(i18nChild, langCode);
+  return el.innerText.trim();
+}
+
+// Selettori/ID predefiniti per gli slot di embed/fragment
+const APP_HOST_ID = "app-host";      // per iframe
+const APP_SLOT_ID = "app-slot";      // per HTML iniettato
+const STEPS_WRAPPER_ID = "steps";     // contenitore focus principale
+
+window.addEventListener("DOMContentLoaded", () => {
+  // Mostra step iniziale
+  showStep(currentStepId);
+
+  // Inizializza le traduzioni al caricamento
+  setLanguage(currentLanguage);
+
+  // Aggiunge i pulsanti di riformulazione agli input
+  addRephraseButtons();
+
+  // Event delegation per click su pulsanti
+  document.addEventListener("click", async (e) => {
+    const btn = e.target.closest("button");
+    if (!btn) return;
+
+    // 1) AVANTI: priorità agli attributi
+    const nextId = btn.getAttribute("data-next");           // step interno
+    const url     = btn.getAttribute("data-url");           // navigazione esterna
+    const embed   = btn.getAttribute("data-embed");         // iframe
+    const fragment= btn.getAttribute("data-fragment");      // fetch html
+
+    try {
+      if (nextId) {
+        // Traccia il clic prima di cambiare step
+        try {
+          const itLabel = getTextFromI18n(btn, 'it');
+          const enLabel = getTextFromI18n(btn, 'en');
+          clickTrail.push({ stepId: currentStepId, it: itLabel, en: enLabel });
+        } catch (err) { /* ignore */ }
+
+        goTo(nextId);
+        return;
+      }
+      if (url) {
+        navigateTo(url);
+        return;
+      }
+      if (embed) {
+        await embedApp(embed);
+        return;
+      }
+      if (fragment) {
+        await injectFragment(fragment);
+        return;
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Si è verificato un errore durante il caricamento del contenuto.");
+      return;
+    }
+
+    // 2) INDIETRO (Gestione unificata pulsante globale e attributo legacy)
+    if (btn.id === 'globalBackButton' || btn.hasAttribute("data-back")) {
+      goBack();
+      return;
+    }
+
+    // 3) COPIA CRONOLOGIA
+    if (btn.hasAttribute("data-copy")) {
+      copyHistory();
+      return;
+    }
+  });
+});
+
+/**
+ * Aggiunge dinamicamente il tasto di riformulazione ✨ accanto agli input, 
+ * escludendo i campi nome/cognome.
+ */
+function addRephraseButtons() {
+  document.querySelectorAll('.inline-input').forEach(input => {
+    const parent = input.parentElement;
+    const i18nEl = parent.querySelector('[data-i18n]');
+    const i18nKey = i18nEl ? i18nEl.getAttribute('data-i18n') : '';
+    const isNameField = ['step2c_li3', 'step2A3_li4', 'step2h3_li1', 'step2I_li2'].includes(i18nKey);
+    
+    if (!isNameField && !input.nextElementSibling?.classList.contains('rephrase-btn')) {
+      const btn = document.createElement('button');
+      btn.className = 'rephrase-btn';
+      btn.type = 'button';
+      btn.textContent = 'Riformula';
+      btn.title = 'Riformula professionalmente';
+      btn.onclick = (e) => {
+        e.preventDefault();
+        rephraseInput(btn);
+      };
+      input.after(btn);
+    }
+  });
+}
+
+async function rephraseInput(btn) {
+  const input = btn.previousElementSibling;
+  if (!input || !input.value || input.value.trim().length < 3) return;
+  const originalBtnText = btn.textContent;
+  btn.textContent = "⏳...";
+  btn.disabled = true;
+  
+  const originalText = input.value.trim();
+  
+  // Ciclo IT -> EN -> IT per forzare la correzione grammaticale e stilistica
+  const toEn = await translateUserInput(originalText, 'en', 'it');
+  const backToIt = await translateUserInput(toEn, 'it', 'en');
+  
+  if (backToIt && backToIt !== originalText) {
+    // Applica una formattazione base (iniziale maiuscola e trim)
+    let fixedText = backToIt.trim();
+    fixedText = fixedText.charAt(0).toUpperCase() + fixedText.slice(1);
+    input.value = fixedText;
+  }
+  
+  btn.textContent = originalBtnText;
+  btn.disabled = false;
+}
+
+// --------- Funzioni core: step interni ---------
+function showStep(stepId) {
+  const all = document.querySelectorAll(".step");
+  all.forEach((s) => s.classList.remove("is-active"));
+
+  const stepEl = document.getElementById(stepId);
+  if (stepEl) {
+    stepEl.classList.add("is-active");
+
+    // Focus per screen reader / tastiera
+    const main = document.getElementById(STEPS_WRAPPER_ID);
+    if (main) main.focus();
+
+    const globalBackButton = document.getElementById('globalBackButton');
+    if (globalBackButton) {
+      globalBackButton.style.display = historyStack.length > 0 ? 'inline-block' : 'none';
+    }
+  }
+}
+
+function goTo(stepId) {
+  if (stepId === currentStepId) return;
+  historyStack.push(currentStepId);
+  currentStepId = stepId;
+  showStep(stepId);
+
+  // Pulizia eventuali contenuti dinamici quando si cambia step
+  cleanupDynamicAreas();
+}
+
+function goBack() {
+  if (historyStack.length === 0) return;
+  currentStepId = historyStack.pop();
+
+  // Rimuove l'ultimo clic per far sì che la cronologia rifletta il percorso a ritroso
+  if (clickTrail.length > 0) {
+    clickTrail.pop();
+  }
+
+  showStep(currentStepId);
+
+  // Pulizia eventuali contenuti dinamici quando si cambia step
+  cleanupDynamicAreas();
+}
+
+// --------- Funzioni nuove: integrazione web app ---------
+
+// Navigazione a una nuova pagina (full load)
+function navigateTo(url) {
+  // Possibile validazione URL (opzionale)
+  window.location.href = url;
+}
+
+// Embed di un'app esterna in iframe dentro lo step corrente
+async function embedApp(url) {
+  const stepEl = document.getElementById(currentStepId);
+  if (!stepEl) throw new Error("Step corrente non trovato.");
+
+  // Trova o crea il contenitore host
+  let host = stepEl.querySelector(`#${CSS.escape(APP_HOST_ID)}`);
+  if (!host) {
+    host = document.createElement("div");
+    host.id = APP_HOST_ID;
+    host.className = "app-host";
+    stepEl.appendChild(host);
+  }
+
+  // Svuota host e crea iframe
+  host.innerHTML = "";
+  const iframe = document.createElement("iframe");
+  iframe.src = url;
+  iframe.loading = "lazy";
+  iframe.referrerPolicy = "no-referrer";
+  // Valuta i permessi necessari per la tua app
+  iframe.setAttribute("sandbox", "allow-scripts allow-forms allow-same-origin");
+  iframe.style.width = "100%";
+  iframe.style.minHeight = "70vh";
+  iframe.style.border = "0";
+
+  host.appendChild(iframe);
+  host.hidden = false;
+
+  // Facoltativo: gestione focus/accessibilità
+  announceLive(stepEl, "Applicazione caricata nell'area incorporata.");
+}
+
+// Carica un frammento HTML e lo inietta nello step corrente
+async function injectFragment(url) {
+  const stepEl = document.getElementById(currentStepId);
+  if (!stepEl) throw new Error("Step corrente non trovato.");
+
+  // Trova o crea lo slot
+  let slot = stepEl.querySelector(`#${CSS.escape(APP_SLOT_ID)}`);
+  if (!slot) {
+    slot = document.createElement("div");
+    slot.id = APP_SLOT_ID;
+    slot.className = "app-slot";
+    slot.setAttribute("role", "region");
+    slot.setAttribute("aria-live", "polite");
+    stepEl.appendChild(slot);
+  }
+
+  slot.textContent = "Caricamento…";
+
+  const res = await fetch(url, { credentials: "same-origin" });
+  if (!res.ok) throw new Error(`Impossibile caricare il frammento: ${res.status}`);
+  const html = await res.text();
+
+  // ATTENZIONE: inietti HTML solo se la fonte è sotto il tuo controllo/trust!
+  slot.innerHTML = html;
+
+  // Facoltativo: inizializza script all'interno del frammento, se presenti data-init, ecc.
+  // Esempio:
+  // const initScript = slot.querySelector('[data-init="run"]');
+  // if (initScript) { ... }
+
+  announceLive(stepEl, "Modulo caricato.");
+}
+
+// Pulizia aree dinamiche quando cambio step
+function cleanupDynamicAreas() {
+  const prevStep = document.querySelector(".step.is-active");
+  // Non cancelliamo dell'attuale, ma assicuriamoci di nascondere dinamiche in step non attivi
+  document.querySelectorAll(`#${CSS.escape(APP_HOST_ID)}, #${CSS.escape(APP_SLOT_ID)}`).forEach((el) => {
+    // Se l'elemento non è dentro lo step attivo, lo svuotiamo per non lasciare iframes/app attive in background
+    if (el.closest(".step") && !el.closest(".step").classList.contains("is-active")) {
+      el.innerHTML = "";
+      el.hidden = true;
+    }
+  });
+}
+
+// Annuncio ARIA-live (accessibilità)
+function announceLive(container, message) {
+  let live = container.querySelector('[aria-live="assertive"]');
+  if (!live) {
+    live = document.createElement("div");
+    live.setAttribute("aria-live", "assertive");
+    live.setAttribute("role", "status");
+    live.className = "sr-only";
+    container.appendChild(live);
+  }
+  live.textContent = message;
+}
+
+// Funzione helper per tradurre il testo inserito dall'utente (opzionale/automatica)
+async function translateUserInput(text, targetLang, fromLang) {
+  if (!text || text.trim() === "" || /^\d+$/.test(text)) return text; // Non traduce se vuoto o solo numeri (ID/UPC)
+  // Assumiamo che l'operatore scriva sempre in italiano come base
+  const sourceLang = fromLang || 'it';
+  if (sourceLang === targetLang) return text;
+
+  try {
+    const res = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(text.trim())}&langpair=${sourceLang}|${targetLang}&mt=1`);
+    const data = await res.json();
+    let translated = data.responseData.translatedText || text;
+
+    // Pulisce le entità HTML comuni che l'API potrebbe restituire
+    translated = translated
+      .replace(/&quot;/g, '"')
+      .replace(/&#39;/g, "'")
+      .replace(/&amp;/g, "&")
+      .replace(/&lt;/g, "<")
+      .replace(/&gt;/g, ">");
+
+    return translated;
+  } catch (e) {
+    console.error("Errore di traduzione:", e);
+    return text;
+  }
+}
+
+// Copia cronologia degli step visitati
+async function copyHistory() {
+  const prefixEn = 'The store reported issues with the "Ciao" application. Please find below the troubleshooting steps performed and the checks carried out:';
+  const prefixIt = 'Lo store ha segnalato problemi con l’applicativo "Ciao". Di seguito il troubleshooting effettuato e le verifiche eseguite:';
+
+  // Possibilità di riformulare i testi prima di copiare (richiesta utente)
+  const filledInputs = Array.from(document.querySelectorAll('.inline-input')).filter(i => i.value.trim().length > 3);
+  if (filledInputs.length > 0 && confirm("Vuoi riformulare automaticamente i testi inseriti per renderli più professionali?")) {
+    for (const input of filledInputs) {
+      const btn = input.nextElementSibling;
+      if (btn && btn.classList.contains('rephrase-btn')) {
+        await rephraseInput(btn);
+      }
+    }
+  }
+
+  const choiceByStep = {};
+  clickTrail.forEach(c => { if (c.stepId) choiceByStep[c.stepId] = c; });
+  const SKIP_STEPS = new Set(['step1', 'step2A']);
+
+  const shouldKeepLine = (text) => {
+    if (!text) return false;
+    const t = text.trim().toLowerCase();
+    if (t.startsWith("aprire un ticket") || t.startsWith("open a ticket")) return false;
+    if (t.startsWith("categoria:") || t.startsWith("category:")) return false;
+    return true;
+  };
+
+  const buildSection = async (langCode) => {
+    let sec = '';
+    // Utilizza la cronologia effettiva (stack + step corrente) per costruire la sezione
+    const allSteps = [...historyStack, currentStepId];
+
+    for (const stepId of allSteps) {
+      if (SKIP_STEPS.has(stepId)) continue;
+      const step = document.getElementById(stepId);
+      if (!step) continue;
+
+      const ch = choiceByStep[stepId];
+      const chosen = ch ? (langCode === 'en' ? ch.en : ch.it) : '';
+
+      let appendedChoice = false;
+      const lines = step.querySelectorAll('p, li');
+      for (const node of lines) {
+        let line = getTextFromI18n(node, langCode);
+
+        if (!shouldKeepLine(line)) continue;
+        
+        const input = node.querySelector('.inline-input');
+        if (input && input.value) {
+          // Identify if it's a name/surname field to avoid translation
+          const i18nEl = node.querySelector('[data-i18n]');
+          const i18nKey = i18nEl ? i18nEl.getAttribute('data-i18n') : '';
+          const isNameField = ['step2c_li3', 'step2A3_li4', 'step2h3_li1', 'step2I_li2'].includes(i18nKey);
+
+          // Traduce il valore dell'input solo se la lingua della sezione è diversa dalla lingua corrente
+          const valToDisplay = (langCode !== currentLanguage && !isNameField) 
+            ? await translateUserInput(input.value, langCode) 
+            : input.value;
+          line += " " + valToDisplay;
+        }
+
+        if (!line) continue;
+
+        if (!appendedChoice && chosen && node.tagName.toLowerCase() === 'p') {
+          line = `${line} → ${chosen}`;
+          appendedChoice = true;
+        }
+        sec += `• ${line}\n`;
+      }
+      if (chosen && !appendedChoice) {
+        sec += `→ ${chosen}\n`;
+      }
+      sec += `\n`;
+    }
+    return sec.trim();
+  };
+
+  // Mostra un feedback visivo se necessario, dato che la traduzione è asincrona
+  const originalBtnText = document.querySelector('[data-copy]').innerText;
+  document.querySelector('[data-copy]').innerText = "...";
+
+  const itSection = await buildSection('it');
+  const enSection = await buildSection('en');
+
+  const finalOutput = `${prefixEn}\n\n\n${enSection ? enSection + '\n' : ''}\n--------------------------------------\n\n${prefixIt}\n\n\n${itSection}`;
+
+  navigator.clipboard.writeText(finalOutput)
+    .then(() => alert(translations[currentLanguage].copy_success))
+    .catch(() => alert(translations[currentLanguage].copy_error))
+    .finally(() => {
+      document.querySelector('[data-copy]').innerText = originalBtnText;
+    });
+}
+function openModal(src) {
+  document.getElementById('modalImage').src = src;
+  document.getElementById('imageModal').style.display = 'block';
+}
+function closeModal() {
+  document.getElementById('imageModal').style.display = 'none';
+}
+
+// Funzione per visualizzare i risultati di ricerca multipli
+function displaySearchResults(results) {
+  const searchResultsList = document.getElementById('searchResultsList');
+  searchResultsList.innerHTML = ''; // Pulisce i risultati precedenti
+
+  results.forEach(result => {
+    const item = document.createElement('div');
+    item.className = 'search-result-item';
+    item.innerHTML = result.url ? `<h4>${result.title}</h4><p>${result.snippet}</p>` : `<h4>${result.title} (ID: ${result.id})</h4><p>${result.snippet}</p>`;
+    item.onclick = (event) => {
+      event.stopPropagation(); // Impedisce al modal di chiudersi quando si clicca un elemento
+      if (result.url) {
+        navigateTo(result.url);
+        closeSearchResultsModal();
+        return;
+      }
+      // Traccia la navigazione via ricerca per mantenere coerente il clickTrail
+      clickTrail.push({ stepId: currentStepId, it: "[Ricerca]", en: "[Search]" });
+      goTo(result.id);
+      closeSearchResultsModal();
+    };
+    searchResultsList.appendChild(item);
+  });
+
+  document.getElementById('searchResultsModal').style.display = 'block';
+}
+
+// Funzione per chiudere il modal dei risultati di ricerca
+function closeSearchResultsModal() {
+  document.getElementById('searchResultsModal').style.display = 'none';
+}
+
+function performSearch() {
+  const searchInput = document.getElementById('stepSearch');
+  const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+  if (!query) return;
+
+  const quickMatches = [];
+  document.querySelectorAll('#step1 .buttons-center button[data-url]').forEach(btn => {
+    const labels = [
+      btn.innerText,
+      getTextFromI18n(btn, 'it'),
+      getTextFromI18n(btn, 'en')
+    ].join(' ').toLowerCase();
+
+    if (labels.includes(query)) {
+      quickMatches.push({
+        id: null,
+        title: btn.innerText.trim(),
+        snippet: btn.getAttribute('data-url') || '',
+        url: btn.getAttribute('data-url')
+      });
+    }
+  });
+
+  const foundSteps = [];
+  const steps = document.querySelectorAll('.step');
+
+  for (const step of steps) {
+    if (step.id === 'step1') continue;
+
+    const stepClone = step.cloneNode(true);
+    stepClone.querySelectorAll('button, .btn, .btn-secondary').forEach(b => b.remove());
+    const stepText = stepClone.textContent.toLowerCase();
+
+    if (stepText.includes(query)) {
+      const titleElement = step.querySelector('.step-title, h2');
+      const title = titleElement ? titleElement.textContent.trim() : `Step ${step.id}`;
+      let snippet = '';
+      const queryIndex = stepText.indexOf(query);
+      if (queryIndex !== -1) {
+        const start = Math.max(0, queryIndex - 50);
+        const end = Math.min(stepText.length, queryIndex + query.length + 100);
+        snippet = stepText.substring(start, end);
+        if (start > 0) snippet = '...' + snippet;
+        if (end < stepText.length) snippet = snippet + '...';
+      }
+
+      foundSteps.push({ id: step.id, title: title, snippet: snippet });
+    }
+  }
+
+  const results = [...quickMatches, ...foundSteps];
+
+  if (results.length === 0) {
+    alert("Nessun risultato trovato per: " + query);
+  } else if (results.length === 1) {
+    if (results[0].url) {
+      navigateTo(results[0].url);
+    } else {
+      goTo(results[0].id);
+    }
+  } else {
+    displaySearchResults(results);
+  }
+}
+// Gestione tasto Invio nell'input di ricerca
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && document.activeElement.id === "stepSearch") {
+    performSearch();
+  }
+});
+</script>
+</body>
+</html>
