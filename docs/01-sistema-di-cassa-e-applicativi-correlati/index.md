@@ -70,7 +70,7 @@ personali attualmente utilizzate per MIM
 
 ## Tool kit
 
-Il [Tool Kit]{.underline} è uno strumento che raccoglie i link
+Il <u>Tool Kit</u> è uno strumento che raccoglie i link
 necessari per accedere a tutte le piattaforme e gli applicativi utili
 per le diverse attività svolte in negozio.
 
@@ -88,20 +88,20 @@ della pagina iniziale del browser Internet.
 Oltre gli applicativi già di conoscenza del negozio, ne sono stati
 aggiunti due nuovi:
 
--   [Look Up Tool]{.underline}, strumento dedicato alla consultazione
+-   <u>Look Up Tool</u>, strumento dedicato alla consultazione
     dello storico vendite di tre anni presente su Acuitas. Su Ciao
     Optical! infatti sono state importate tutte le anagrafiche cliente e
     i dati delle prescrizioni. Le vendite invece sono disponibili su
     questo strumento.
 
--   [Listini&Sconti]{.underline}, archivio di tutti i listini (offerta
+-   <u>Listini&Sconti</u>, archivio di tutti i listini (offerta
     commerciale occhiale completo, assicurazioni e abbonamenti)
     disponibili in formato PDF e consultabili direttamente da web senza
     doverli scaricare in locale sul computer.
 
 ## LPA 
 
-La piattaforma [LPA -- Lab Processing Application]{.underline} è
+La piattaforma <u>LPA -- Lab Processing Application</u> è
 dedicata alla parte finale del processo di inserimento ordini verso il
 laboratorio di Sedico. È possibile accedere alla piattaforma attraverso
 il Tool Kit, selezionando Lab Processing Application.
@@ -176,7 +176,7 @@ D.  Edit Order Ticket: in Change OPC per modificare le misure della
 
 ## Order tracker
 
-La piattaforma [Order Tracker]{.underline} rimane lo strumento
+La piattaforma <u>Order Tracker</u> rimane lo strumento
 dedicato al controllo e monitoraggio della lavorazione degli ordini e
 del loro flusso di consegna. È possibile accedere alla piattaforma
 attraverso il Tool Kit, selezionando Order Tracker.
@@ -186,19 +186,19 @@ attraverso il Tool Kit, selezionando Order Tracker.
 Tra le novità che derivano dall'adozione di Ciao! Optical come nuovo
 sistema di cassa ci sono alcune migliorie che riguardo Order Tracker:
 
--   Quando un WO viene consegnato al cliente e scontrinato in cassa, [il
+-   Quando un WO viene consegnato al cliente e scontrinato in cassa, <u>il
     record dell'ordine ad esso riferito viene in automatico identificato
-    come consegnato]{.underline} e si cancella dalla lista degli ordini
+    come consegnato</u> e si cancella dalla lista degli ordini
     ancora in gestione presente in Order Tracker.
 
-**Di conseguenza non si rende più necessario effettuare la procedura manuale per indicare che è un ordine è stato consegnato (DISPENSED) > perché questo processo è automatico.**
+**Di conseguenza non si rende più necessario effettuare la procedura manuale per indicare che è un ordine è stato consegnato (DISPENSED) perché questo processo è automatico.**
 
 
 
 -   Nella sezione PRODUCT TO COME è possibile monitorare anche gli
     ordini di lenti a contatto indirizzati al negozio.
 
--   Tutti gli [ordini effettuati con Smart Shopper]{.underline} sono
+-   Tutti gli <u>ordini effettuati con Smart Shopper</u> sono
     monitorabili in Order Tracker. In particolare:
 
     -   Ordini di sola montatura (*occhiale da sole o montatura da
