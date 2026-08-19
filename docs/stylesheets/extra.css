@@ -70,6 +70,35 @@ body::before {
   color: var(--kb-cyan);
 }
 
+.md-typeset table:not([class]) {
+  background: rgba(10, 8, 24, .58);
+  border: 1px solid rgba(0, 255, 255, .2);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+  display: table;
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+  background: rgba(0, 255, 255, .1);
+  color: #fff;
+  font-weight: 700;
+}
+
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+  border-bottom: 1px solid rgba(255, 255, 255, .12);
+}
+
+.md-typeset table:not([class]) tr:last-child td {
+  border-bottom: 0;
+}
+
+.md-typeset table:not([class]) td:first-child {
+  color: rgba(247, 251, 255, .72);
+  width: 3rem;
+}
+
 .md-typeset table:not([class]) tr:hover {
   background: rgba(0, 255, 255, .08);
 }
