@@ -98,6 +98,7 @@ Totale Cassetti). Nel caso in cui:
     registrare le vendite mancanti sulla stampante fiscale.
 
    ![screenshot procedura](./img/image31.png)
+   
 -   Il Totale Cassetti sia inferiore al
     Totale Stampante, procedere a registrare le transazioni mancanti,
     sul sistema di cassa, usando la funzione di vendita manuale da
