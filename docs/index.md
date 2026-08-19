@@ -8,7 +8,7 @@ Base di conoscenza del sistema di cassa **Ciao!** e degli applicativi correlati 
 
 # Indice rapido
 
-| # | Argomento |
+| N° | Argomento |
 |---|---|
 | 1 | [Sistema di cassa e applicativi correlati](01-sistema-di-cassa-e-applicativi-correlati/index.md) |
 | 2 | [Operazioni di apertura e di chiusura](02-operazioni-di-apertura-e-di-chiusura/index.md) |
