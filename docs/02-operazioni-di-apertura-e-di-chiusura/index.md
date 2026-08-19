@@ -97,7 +97,8 @@ Totale Cassetti). Nel caso in cui:
 -   il Totale Stampante sia inferiore al Totale Cassetti, procedere a
     registrare le vendite mancanti sulla stampante fiscale.
 
--   ![screenshot procedura](./img/image31.png)Il Totale Cassetti sia inferiore al
+   ![screenshot procedura](./img/image31.png)
+-   Il Totale Cassetti sia inferiore al
     Totale Stampante, procedere a registrare le transazioni mancanti,
     sul sistema di cassa, usando la funzione di vendita manuale da
     XStore.
@@ -145,9 +146,7 @@ come in figura:
 -   Errore pagamento: nel caso in cui la sera in chiusura ci sia un
     ammanco o un'eccedenza cassa a causa di un errato resto contante.
 
-```{=html}
-<!-- -->
-```
+
 -   Crossover: nel caso in cui ci sia un'uscita in una modalità e
     un'entrata di pari valore in una diversa modalità di pagamento.
 
@@ -164,8 +163,8 @@ come in figura:
 
 Come ultimo step, Il sistema ti propone l'importo da versare in
 Cassaforte, tale valore sarà dato dal totale dei contanti contati meno
-il fondo cassa fisso a 300€. [In quanto NON sarà più possibile
-modificare il valore del fondo cassa.]{.underline}
+il fondo cassa fisso a 300€. <u>In quanto NON sarà più possibile
+modificare il valore del fondo cassa.</u>
 
 Suggeriamo quindi di far sì che i 300€ siano composti da più tagli
 diversi possibili, in modo da poter gestire il contante agevolmente la
@@ -176,15 +175,19 @@ sacchetto che conserverete in cassaforte.
 
 Ad esempio: totale contanti presenti in cassetto a fine giornata pari a
 536,50€ Il sistema proporrà automaticamente di versare in cassaforte
-236,50€. Accettare il valore, [lasciare nel cassetto 300€, e spostare in
-cassaforte i 236,50€.]{.underline}
+236,50€. Accettare il valore, <u>lasciare nel cassetto 300€, e spostare in
+cassaforte i 236,50€.</u>
+
 
 ![screenshot procedura](./img/image39.png)
+
 
 Una volta effettuata la chiusura di cassa, la barra in basso
 corrispondente alla cassa diventa rossa.
 
+
 ![screenshot procedura](./img/image40.png)
+
 
 A seguire procedere alla chiusura del negozio selezionando *Chiusura
 Negozio*.
@@ -194,7 +197,10 @@ Negozio*.
 Scegliere *Si* e lasciare un messaggio di chiusura (visualizzabile
 all'apertura di negozio il giorno successivo).
 
-![screenshot procedura](./img/image42.png)![screenshot procedura](./img/image43.png)
+
+![screenshot procedura](./img/image42.png)
+
+![screenshot procedura](./img/image43.png)
 
 Si consiglia di scrivere all'interno del messaggio di chiusura negozio,
 per ogni cassa, l'importo di Fondo Cassa precedentemente inserito.
