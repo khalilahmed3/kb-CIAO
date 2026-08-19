@@ -85,5 +85,3 @@ opzioni:
 
 Una volta premuto Search il sistema vi mostrerà la lista degli UPC
 disponibili come nella sezione descritta in precedenza.
-
-[Tabella riassuntiva delle Merch cat di ciascun brand:]{.underline}
