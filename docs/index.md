@@ -4,7 +4,7 @@ title: "KB Ciao! — Manuale Operativo"
 
 # KB Ciao! — Manuale Operativo
 
-Base di conoscenza del sistema di cassa **Ciao!** e degli applicativi correlati (Ciao! Optical, LPA, Order Tracker, Smart Shopper), riorganizzata a partire dal manuale operativo Word in file Markdown consultabili e versionabili.
+Base di conoscenza del sistema di cassa **Ciao!** e degli applicativi correlati (Ciao! Optical, LPA, Order Tracker, Smart Shopper), riorganizzata a partire dal manuale operativo.
 
 ## Come usare questa KB
 
@@ -35,6 +35,3 @@ Base di conoscenza del sistema di cassa **Ciao!** e degli applicativi correlati 
 | 17 | [Operative](17-17-operative/index.md) |
 | 18 | [Tag printing](18-18-tag-printing/index.md) |
 
-## Contribuire
-
-Le modifiche vanno proposte via Pull Request. Per aggiungere una procedura mancante o correggerne una esistente, modifica il file `.md` corrispondente in `docs/` e apri una PR: la cronologia Git sostituisce le vecchie copie "v2 - Copy" del documento Word.
