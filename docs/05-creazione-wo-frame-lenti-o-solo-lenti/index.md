@@ -63,11 +63,7 @@ B.  Ricercando per brand utilizzando il campo Marca e Codice Modello. È
     Codice Modello (es. RB4147). Selezionare *Cerca Montatura* o premere
     invio avviare la ricerca.
 
-> Il risultato della ricerca è una lista di tutti gli articoli
-> disponibili del brand selezionato. Dopo aver cliccato sulla riga della
-> montatura d'interesse, posizionare il puntatore del mouse fuori dalla
-> lista e scorrere verso il basso per visualizzare la selezione
-> effettuata.
+**Il risultato della ricerca è una lista di tutti gli articoli disponibili del brand selezionato. Dopo aver cliccato sulla riga della montatura d'interesse, posizionare il puntatore del mouse fuori dalla lista e scorrere verso il basso per visualizzare la selezione effettuata.**
 
 C.  Selezione da Smartshopper (solo su iPad). Cliccare su *Avvia Smart
     Shopper* e scegliere la montatura. Selezionare *Aggiungi al
@@ -345,25 +341,21 @@ abbiamo selezionato può dirci:
 Le diciture che il sistema può riportare in questo campo sono le
 seguenti:
 
-> 1.Questa è una lavorazione one hour
->
-> 2.Questo ordine verrà gestito dal Laboratorio il giorno successivo
->
-> 3.Il sistema è offline, questo ordine dovrà essere inoltrato
-> nuovamente a LPA
->
-> 4.Questo ordine è un Complete Pair gestito dal Laboratorio
->
-> 5.Questo ordine è un Frame to Come. Il Laboratorio necessita l\'invio
-> del frame da parte del negozio
->
-> 6.Questo ordine è un Lens Only con lavorazione one hour. Il
-> Laboratorio spedisce solo le lenti non tagliate.
->
-> 7.Questo ordine è un Lens Only. Il Laboratorio spedisce solo le lenti.
->
-> 8.Questo ordine prevede delle lenti da fornitore terzo. No invio
-> ordine a Sedico
+ 1.Questa è una lavorazione one hour
+
+ 2.Questo ordine verrà gestito dal Laboratorio il giorno successivo
+
+ 3.Il sistema è offline, questo ordine dovrà essere inoltrato nuovamente a LPA
+
+ 4.Questo ordine è un Complete Pair gestito dal Laboratorio
+
+ 5.Questo ordine è un Frame to Come. Il Laboratorio necessita l'invio  del frame da parte del negozio
+
+ 6.Questo ordine è un Lens Only con lavorazione one hour. Il Laboratorio spedisce solo le lenti non tagliate.
+
+ 7.Questo ordine è un Lens Only. Il Laboratorio spedisce solo le lenti.
+
+ 8.Questo ordine prevede delle lenti da fornitore terzo. No invio ordine a Sedico
 
 È quindi molto importante prestare attenzione alla dicitura che il
 sistema vi riporta nel quadrato sottostante, perché è una prima
@@ -529,7 +521,7 @@ Al completamento del flusso vengono stampati tre documenti:
 
 -   Documento di conformità (in doppia copia)
 
-Questo documento è possibile [ristamparlo]{.underline} andando su:
+Questo documento è possibile <u>ristamparlo</u> andando su:
 *Backoffice* -- *Giornale* -- *Giornale elettronico*. Ricercare la
 transazione per la quale si desidera ristampare il documento di
 conformità, per facilitare la ricerca, inserire il cognome del cliente
@@ -538,7 +530,7 @@ nel campo *Cliente o Cognome*
 > ![screenshot procedura](./img/image174.png)
 
 Premendo su Conferma appariranno tutte le transazioni per quel cliente,
-[selezionare la transazione di presa caparra]{.underline} e premere su
+<u>selezionare</u> la transazione di presa caparra e premere su
 *Visualizza dettagli*. È fondamentale selezionare la transazione di
 presa caparra altrimenti NON verrà visualizzato il tasto èer ristampare
 il documento di conformità.
@@ -617,14 +609,11 @@ diverse casistiche:
     pair da Ciao, basterà trasmetterlo cliccando qui
     ![screenshot procedura](./img/image179.png)
 
-```{=html}
-<!-- -->
-```
 -   Se il sistema propone Lens Only o Frame to Come avete la
     possibilità di modificarlo prima di trasmetterlo o lasciarlo così.
 
-[Se NON volete la tipologia d\'ordine che il sistema vi propone cosa
-bisogna fare?]{.underline}
+<u>Se NON volete la tipologia d\'ordine che il sistema vi propone cosa
+bisogna fare?</u>
 
 Se per esempio il sistema vi ha dato come feedback che l\'ordine è un
 Frame to Come avete la possibilità di trasmetterlo come Lens Only. Gli
