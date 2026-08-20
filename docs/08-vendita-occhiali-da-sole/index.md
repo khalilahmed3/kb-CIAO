@@ -49,7 +49,9 @@ aggiungere garanzie e sconti e visualizzare maggiori dettagli.
 
 ![screenshot procedura](./img/image203.png)![screenshot procedura](./img/image204.png)
 
-![screenshot procedura](./img/image205.png)![screenshot procedura](./img/image208.png)Cliccare nuovamente su *Vai a Pagamento*
+![screenshot procedura](./img/image205.png)![screenshot procedura](./img/image208.png)
+
+Cliccare nuovamente su *Vai a Pagamento*
 per concludere la vendita su XStore.
 
 ## Vendita con anagrafica
