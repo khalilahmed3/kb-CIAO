@@ -187,7 +187,9 @@ Successivamente compilare anche i seguenti campi:
 ![screenshot procedura](./img/image107.png)![screenshot procedura](./img/image109.png)![screenshot procedura](./img/image110.png)
 ![screenshot procedura](./img/image111.png)
 
-![Immagine che contiene testo Descrizione generata automaticamente](./img/image112.png)![screenshot procedura](./img/image117.png)![screenshot procedura](./img/image118.png)Cliccare su *Continua* per attivare la
+![Immagine che contiene testo Descrizione generata automaticamente](./img/image112.png)![screenshot procedura](./img/image117.png)![screenshot procedura](./img/image118.png)
+
+Cliccare su *Continua* per attivare la
 raccolta dei consensi medici. Il rilascio dei consensi privacy per i
 dati medici avviene via stampa o firma digitale (da iPad).
 
