@@ -15,16 +15,10 @@ La vendita di lenti a contatto può avvenire in tre modalità:
     dei dati nel caso di un nuovo cliente o l'accesso ad un profilo
     pre-esistente:
 
-```{=html}
-<!-- -->
-```
 a.  Sezione *AFA/Servizi (senza prescrizione)*
 
 b.  Sezione *Lenti a contatto (con prescrizione)*
 
-```{=html}
-<!-- -->
-```
 3.  Prima applicazione LAC e campioni
 
 ## Vendita veloce senza anagrafica cliente
@@ -142,7 +136,9 @@ codificate puntualmente) ricadono in questa categoria.
 Cliccare su *Continua* e raccogliere i consensi privacy per i dati
 medici.
 
-![screenshot procedura](./img/image223.png)![screenshot procedura](./img/image225.png)Il rilascio di questi rispecchia quanto
+![screenshot procedura](./img/image223.png)![screenshot procedura](./img/image225.png)
+
+Il rilascio di questi rispecchia quanto
 visto nel *capitolo 3.3* per i consensi marketing raccolti via e-mail o
 stampa.
 
@@ -153,7 +149,7 @@ prescrizioni del cliente.
 Per facilitare la comprensione della vendita delle lenti a contatto
 riportiamo un paio di esempi concreti.
 
-Il primo riguarda [le lenti a contatto con codice specifico]{.underline}
+Il primo riguarda <u>le lenti a contatto con codice specifico</u>
 a livello di potere (lenti a contatto sferiche e alcune multifocali come
 ad esempio le Moist)
 
@@ -172,7 +168,7 @@ Una volta completato l\'ordine non sarà necessario ricrearlo anche su
 MIM, l'operazione sarà sutomatica.
 
 Il secondo tipo di lenti che vogliamo analizzare sono le lenti a
-contatto con [codice generico]{.underline} (la quasi totalità delle
+contatto con <u>codice generico</u> (la quasi totalità delle
 lenti multifocali e toriche)
 
 ![screenshot procedura](./img/image230.png)
@@ -212,7 +208,7 @@ in MIM per fare il calco.
 
 ![screenshot procedura](./img/image233.png)
 
-[Quantità in stock va SEMPRE completata con 0]{.underline}
+<u>Quantità in stock va SEMPRE completata con 0</u>
 
 Nella pagina *Modulo D'ordine* è possibile inserire eventuali sconti e
 procedere al pagamento su Xstore. Alternativamente, è possibile stampare
@@ -240,7 +236,9 @@ campo Tipo di prescrizione.
 
 ![screenshot procedura](./img/image237.png)
 
-![Immagine che contiene testo Descrizione generata automaticamente](./img/image238.png)In seguito a questa selezione, nella stessa
+![Immagine che contiene testo Descrizione generata automaticamente](./img/image238.png)
+
+In seguito a questa selezione, nella stessa
 pagina si rendono disponibili tre sezioni: General, Contact Lenses
 Details e Feedback. Queste sezioni sono integrate nella prescrizione e
 utilizzate per raccogliere tutte le informazioni legate alla prima
@@ -275,5 +273,5 @@ documenti, il sistema erogherà la seguente documentazione:
 
 -   Tray ticket
 
-![Immagine che contiene testo Descrizione generata automaticamente](./img/image245.png)[\
-]{.mark}
+![Immagine che contiene testo Descrizione generata automaticamente](./img/image245.png)
+
