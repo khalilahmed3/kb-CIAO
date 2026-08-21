@@ -41,7 +41,9 @@ scannerizzando il barcode) e cliccare su *Cerca Prodotto*. Selezionare
 il prodotto e cliccare su *Vai a Pagamento* per visualizzare l'anteprima
 del prezzo ed aggiungere eventuali sconti.
 
-![screenshot procedura](./img/image217.png)Cliccare nuovamente su *Vai a Pagamento* per concludere
+![screenshot procedura](./img/image217.png)
+
+Cliccare nuovamente su *Vai a Pagamento* per concludere
 la vendita su Xstore secondo le modalità già descritte.
 
 Se si desidera sospendere momentaneamente la vendita salvandola nella
