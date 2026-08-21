@@ -40,7 +40,7 @@ sarà presente Store. Al contrario, se è stata selezionata l'opzione
 
 ## Tracking ordine
 
-Tutti gli [ordini effettuati con Smart Shopper]{.underline} sono
+Tutti gli <u>ordini effettuati con Smart Shopper</u> sono
 monitorabili in Order Tracker. In particolare:
 
 -   Authomatic Dispensed, dopo avere cliccato su Dispensed l'ordine
@@ -51,8 +51,7 @@ monitorabili in Order Tracker. In particolare:
     È possibile controllare l'ordine fino al momento in cui viene dato
     in gestione al corriere.
 
-> Quindi dopo il cambio di stato in Shipped non si potrà vedere più il
-> tracking del corriere.
+ **Quindi dopo il cambio di stato in Shipped non si potrà vedere più il tracking del corriere.**
 
 -   Ordini di lenti a contatto integrati (su Vision Direct).
 
