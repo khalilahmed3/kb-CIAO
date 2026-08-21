@@ -58,12 +58,12 @@ anche lo stato in cui si è bloccata la transazione, o se è stata
 eliminata.
 
 Sempre all'interno del giornale si ha anche la possibilità di poter
-[ristampare la ricevuta]{.underline}, sia via mail che tramite stampa.
+<u>ristampare la ricevuta</u>, sia via mail che tramite stampa.
 
 Inoltre, è possibile anche trovare la fattura i caso fosse stata creata
 e stamparla, ma anche crearla da zero, in caso non si fosse ancora
-effettuata, naturalmente [sempre all'interno della stessa
-giornata]{.underline}.
+effettuata, naturalmente <u>sempre all'interno della stessa
+giornata</u>
 
 ![screenshot procedura](./img/image349.png)
 
