@@ -34,10 +34,10 @@ la somma di reso corretta, cioè la caparra per quel specifico WO.
 
 ![screenshot procedura](./img/image287.png)
 
-[GIOVA OSSERVARE CHE: qualora si voglia eseguire un reso per un
+<u>GIOVA OSSERVARE CHE: qualora si voglia eseguire un reso per un
 errore/modifica nel WO che non abbia comportato un reale pagamento, si
 andrà a selezionare *In attesa di pagamento* per l'intera
-cifra.]{.underline}
+cifra.</u>
 
 Esempio: Viene eseguito un ordine di 329 euro e pagata una caparra di
 29. Qualora si volesse rendere, andremo a selezionare *Lista Caparre*,
@@ -142,7 +142,7 @@ garanzia..)
     un'apertura di GLPI.
 
 La procedura di reso con rimborso tramite bonifico va richiesta
-[soltanto in casi eccezionali]{.underline} per i quali non sussista
+<u>soltanto in casi eccezionali</u> per i quali non sussista
 altra soluzione se non un pagamento da sede.
 
 I casi accettati sono resi a clienti residenti all'estero
@@ -230,31 +230,31 @@ il nome ed il cognome del cliente.
 Spostandosi verso destra è possibile poi vedere altre informazioni della
 vendita quali:
 
-a.  Elenco [prodotti]{.underline} venduti con relativi codici,
+a.  Elenco <u>prodotti</u> venduti con relativi codici,
     descrizione dell'articolo, prezzo, eventuale sconto applicato e
     tasse
 
-b.  [Valore totale]{.underline} della transazione dato dalla somma
+b.  <u>Valore totale</u> della transazione dato dalla somma
     dei prezzi dei prodotti elencati. La colonna Total ripete il valore
     totale della transazione in ogni riga. In questo esempio quindi il
     valore totale della transazione è pari a 660€
 
-c.  Dettaglio dei [metodi di pagamento]{.underline} utilizzati per
+c.  Dettaglio dei <u>metodi di pagamento</u> utilizzati per
     questa vendita:
 
-Tender Deposit: valore [caparra]{.underline}
+Tender Deposit: valore <u>caparra</u>
 
-Tender CC: parte della vendita pagata in [carta o bancomat]{.underline}
+Tender CC: parte della vendita pagata in <u>carta o bancomat</u>
 
-Tender Gift: parte della vendita pagata con [gift card]{.underline}
+Tender Gift: parte della vendita pagata con <u>gift card</u>
 
 Tender 1 Desc + Tender 1 Amt: parte della vendita pagata attraverso
-[finanziamenti (Findomestic o PagoDIL) o Adaro]{.underline} (nella
+<u>finanziamenti (Findomestic o PagoDIL) o Adaro</u> (nella
 casella Desc viene riportato il nome del metodo di pagamento e nella
 casella Amt il valore)
 
 Tender 2 Desc + Tender 2 Amt: parte della vendita pagata attraverso
-[assicurazione]{.underline} (nella casella Desc viene riportato il nome
+<u>assicurazione</u> (nella casella Desc viene riportato il nome
 dell'assicurazione e nella casella Amt il valore)
 
 Notes: parte della vendita pagata attraverso altri metodi di pagamento
@@ -315,15 +315,15 @@ I documenti che verranno emessi e inviati al cliente sono:
 \- Documento di reso (nota di credito), che dovrà essere archiviato
 
 Al momento dell'inserimento di un reso non verificato da Acuitas su Ciao
-è importante sottolineare che [l'iva dei prodotti da rendere sarà
-sempre di default al 22%]{.underline}
+è importante sottolineare che <u>l'iva dei prodotti da rendere sarà
+sempre di default al 22%</u>
 
 Percìò nel caso si trattasse di un reso di prodotti con iva al 4%, come
 per esempio gli occhiali da vista, è necessario modificare l'importo
 dell'iva.
 
-*[Questo processo è fondamentale per evitare di trasmettere prodotti con
-iva errata all'agenzia delle entrate.]{.underline}*
+*<u>Questo processo è fondamentale per evitare di trasmettere prodotti con
+iva errata all'agenzia delle entrate.</u>*
 
 Di seguito vi proponiamo i passaggi da effettuare:
 
@@ -439,7 +439,7 @@ Per mancata erogazione di una garanzia: seguire i passaggi 1, 2, 3,
 
 5.  Procedere con una nuova vendita come riportato nel *capitolo 5.*
 
-> Su LPA non occorrerà procedere con alcuna operazione.
+**Su LPA non occorrerà procedere con alcuna operazione.**
 
 6.  Al termine dell'operazione di reso, il sistema dovrà erogare la
     seguente documentazione:
@@ -468,7 +468,7 @@ La modalità Scambio si può utilizzare solo per i seguenti prodotti:
 *Lo scambio non è utilizzabile per prodotti in deposito.*
 
 Per tutti gli altri tipi di scambio, come per i prodotti vista,
-procedere effettuando [un reso e una nuova vendita]{.underline}, in
+procedere effettuando <u>un reso e una nuova vendita</u>, in
 quanto, con lo stesso non è possibile emettere la fattura.
 
 Le modalità per effettuare lo scambio sono due:
@@ -479,11 +479,8 @@ Le modalità per effettuare lo scambio sono due:
 2.  Da iPad è possibile selezionare *Cattura ID Scontrino* (da ricerca
     su Customer Order), per catturare il barcode.
 
-> Il sistema mostra all'interno dei Risultati Ricerca il cliente
-> desiderato. Dalla sezione *Storico Ordini* del profilo cliente,
-> cliccare su *Scambio*, oppure, è anche possibile spuntare la check-box
-> dell'ordine e successivamente cliccare su *Scambiare Ordini
-> Selezionati.*
+ **Il sistema mostra all'interno dei Risultati Ricerca il cliente  desiderato. Dalla sezione *Storico Ordini* del profilo cliente,
+ cliccare su *Scambio*, oppure, è anche possibile spuntare la check-box dell'ordine e successivamente cliccare su *Scambiare Ordini Selezionati.**
 
 ![screenshot procedura](./img/image334.png)
 
@@ -530,23 +527,16 @@ può scegliere tra le diverse modalità previste.
         firmare al cliente e si tiene in negozio, l'altra che si
         consegna al cliente
 
-> *In caso di transazione pari a zero, il sistema restituisce solo gli
-> scontrini non fiscali.*
+* *In caso di transazione pari a zero, il sistema restituisce solo gli scontrini non fiscali.**
 
-##  
 
-##  
-
-##  
-
-##  
 
 ## 14.9 Modulo Remake a Sedico 
 
-All'interno della libreria di Store360, nella cartella Ciao! potrete
+All'interno della libreria di Store360, nella cartela Ciao! potrete
 trovare il nuovo Modulo Remake da utilizzare per rendere a Sedico le
-lenti (o CO) con "[Difetto di Fabbricazione]{.underline}" o "[Errore
-costruzione lente]{.underline}".
+lenti (o CO) con "<u>Difetto di Fabbricazione</u>" o "<u>Errore
+costruzione lente</u>".
 
 Si tratta di un PDF modificabile da compilare inserendo:
 
@@ -571,7 +561,6 @@ processare il reso a Sedico.
 Questo è il modulo che troverete nella cartella Ciao! di Smarty
 (exStore360).
 
-##  
 
 ## 14.10 Remake pre-consegna ordine su LPA 
 
@@ -609,4 +598,4 @@ l\'occhiale in store il cliente riceve un'e-mail che l\'occhiale è
 pronto per essere consegnato. Nel caso in cui dopo l'ispezione ci si
 accorga che l\'occhiale necessita di un remake, è*
 
-*necessario chiamare il cliente e avvisarlo.*[]
+*necessario chiamare il cliente e avvisarlo.*
