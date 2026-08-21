@@ -67,15 +67,13 @@ possono essere gestibili da:
 
 2.  Customer Order
 
-```{=html}
-<!-- -->
-```
+
 1.  Da Xstore, selezionare la vendita e successivamente selezionare
     *Aggiungere sconto*. Inserire il codice per lo sconto e
     successivamente la percentuale o l'importo in valore da stornare dal
     totale nella schermata specifica alla tipologia di sconto (Enter
     Amount e Enter Percentage). Fondamentale è ricordarsi che questa
-    tipologia di sconti [va inserita due volte]{.underline}, al momento
+    tipologia di sconti <u>va inserita due volte</u>, al momento
     della presa caparra e al momento della consegna.
 
 ![screenshot procedura](./img/image273.png)![screenshot procedura](./img/image274.png)
@@ -136,7 +134,7 @@ particolare:
 -   Per le Assicurazioni / convenzioni, per applicare lo sconto sarà
     necessario utilizzare i codici presenti nella seconda e terza pagina
     del documento caricato nel Tool Kit nella app Listini chiamato
-    [Ciao! ASSICURAZIONI -- CONVENZIONI]{.underline}. Sparando questo
+    <u>Ciao! ASSICURAZIONI -- CONVENZIONI</u>. Sparando questo
     codice, sarà automaticamente il sistema ad applicare la promozione
     corretta a seconda degli item selezionati. Per permettere la
     corretta applicazione, la voce Assicurazione nell'anagrafica cliente
