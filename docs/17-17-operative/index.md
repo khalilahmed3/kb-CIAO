@@ -7,7 +7,7 @@ title: "Operative"
 ## 17.1 Ristampare una fattura  
 
 Nel caso in cui ci si dimenticasse di emettere la fattura è possibile
-recuperarla [solo nella stessa giornata]{.underline} tramite la funzione
+recuperarla <u>solo nella stessa giornata</u> tramite la funzione
 Ristampa fattura. Gli step da seguire sono:
 
 1.  Accedere al Back-office
@@ -190,10 +190,10 @@ totali che si effettuano in negozio, è la seguente:
 
 ![screenshot procedura](./img/image396.png)
 
-4.  Inserire il codice dell'offerta [a seconda che sia un omaggio per la
-    classe medica o di altra tipologia:]{.underline}
+4.  Inserire il codice dell'offerta <u>a seconda che sia un omaggio per la
+    classe medica o di altra tipologia:
 
-[OMAGGI A CLASSE MEDICA:]{.underline}
+<u>OMAGGI A CLASSE MEDICA:</u>
 
 -   Negozi diretti: il codice sconto è [16153]{.mark}
 
@@ -201,7 +201,7 @@ totali che si effettuano in negozio, è la seguente:
 
 ![Immagine che contiene testo, schermata, software, Pagina Web Descrizione generata automaticamente](./img/image397.png)
 
-[ALTRI OMAGGI:]{.underline}
+<u>ALTRI OMAGGI:</u>
 
 -   Negozi diretti e Franchising: il codice sconto è
     [888999]{.mark}
@@ -296,7 +296,7 @@ che si sta per effettuare.
 Questa funzione serve anche per visualizzare il contante presente in
 cassaforte:
 
--   [Versamento in banca]{.underline}: si inserisce il totale che si
+-   <u>Versamento in banca</u>: si inserisce il totale che si
     vuole versare per ogni denominazione e si clicca su *Sommario*, il
     sistema mostra quanto si è voluto versare, confrontato con quanto il
     sistema ritiene sia presente in cassaforte. Per procedere al
@@ -306,7 +306,7 @@ cassaforte:
     bloccherà l'operazione. Altrimenti l'operazione sarà completata e
     verranno stampati due scontrini dalla stampante scontrini.
 
--   [Verifica del contenuto della cassaforte]{.underline}: Si segue la
+-   <u>Verifica del contenuto della cassaforte</u>: Si segue la
     stessa procedura, ma non è necessario inserire alcun valore. Andando
     su *Sommario*, il sistema mostrerà il contenuto della cassaforte
     alla voce *Somma Sistema*.
@@ -316,7 +316,7 @@ Deposito contante in cassaforte
 Il percorso è il medesimo, da *Backoffice* -- *Modalità di cassetto* --
 *Manutenzione cassaforte*, scelgo l'opzione *Deposito contante in
 cassaforte*. Inserisco il totale di denaro che si vuole aggiungere alla
-cassaforte [extra sistema]{.underline}, cioè non proveniente dalle
+cassaforte **extra sistema**, cioè non proveniente dalle
 postazioni di vendita (per esempio il denaro presente in cassaforte
 antecedente alla messa in opera di Ciao!), premo invio e l'azione è
 completata.
