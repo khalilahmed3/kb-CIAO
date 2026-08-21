@@ -1,0 +1,1120 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Base di conoscenza del sistema di cassa Ciao! e applicativi correlati">
+      
+      
+      
+      
+        <link rel="prev" href="../02-operazioni-di-apertura-e-di-chiusura/">
+      
+      
+        <link rel="next" href="../04-gestione-dati-prescrizione-e-visite/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/dxc.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Gestione anagrafica cliente - KB Ciao! - Manuale Operativo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#gestione-anagrafica-cliente" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href=".." title="KB Ciao! - Manuale Operativo" class="md-header__button md-logo" aria-label="KB Ciao! - Manuale Operativo" data-md-component="logo">
+      
+  <img src="../assets/dxc.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            KB Ciao! - Manuale Operativo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Gestione anagrafica cliente
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="KB Ciao! - Manuale Operativo" class="md-nav__button md-logo" aria-label="KB Ciao! - Manuale Operativo" data-md-component="logo">
+      
+  <img src="../assets/dxc.png" alt="logo">
+
+    </a>
+    KB Ciao! - Manuale Operativo
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-sistema-di-cassa-e-applicativi-correlati/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sistema di cassa e applicativi correlati
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-operazioni-di-apertura-e-di-chiusura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operazioni di apertura e di chiusura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestione anagrafica cliente
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestione anagrafica cliente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ricerca-cliente-esistente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ricerca cliente esistente
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creazione-nuovo-cliente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creazione nuovo cliente
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raccolta-consensi-marketing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Raccolta consensi marketing
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-gestione-dati-prescrizione-e-visite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestione dati prescrizione e visite
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-creazione-wo-frame-lenti-o-solo-lenti/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creazione WO Frame + Lenti o Solo Lenti
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-tracciatura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tracciatura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-ricezione-ordine-complete-job-ftc-lens-only-e-consegna-al-cl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ricezione ordine Complete Job -- FTC -- Lens Only e consegna al cliente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-vendita-occhiali-da-sole/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vendita occhiali da sole
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-vendita-lenti-a-contatto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vendita lenti a contatto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-vendita-accessori-ricambi-e-servizi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vendita accessori, ricambi e servizi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-one-hour-lenses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    One hour Lenses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-vendita-da-smart-shopper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vendita da Smart Shopper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-gestione-promozioni/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestione promozioni
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-14-gestione-servizi-post-vendita/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14 Gestione servizi post-vendita
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-15-reporting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15 Reporting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-16-elenco-ordini-attivo-archivio-e-caparra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16 Elenco Ordini: Attivo, Archivio e Caparra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-17-operative/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    17 Operative
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-18-tag-printing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    18 Tag printing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ricerca-cliente-esistente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ricerca cliente esistente
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creazione-nuovo-cliente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creazione nuovo cliente
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raccolta-consensi-marketing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Raccolta consensi marketing
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="gestione-anagrafica-cliente">Gestione anagrafica cliente</h1>
+<p>Il flusso di raccolta anagrafica cliente su Ciao! Optical condotto
+attraverso l'iPad ha la funzionalità aggiuntiva di poter far firmare al
+cliente i moduli privacy direttamente da iPad, evitandone quindi la
+stampa e il conseguente archivio cartaceo.</p>
+<p><img alt="screenshot procedura" src="img/image45.png" /></p>
+<p>Per questo motivo si consiglia di eseguire tale processo utilizzando
+l'iPad. L'iPad va tenuto orizzontalmente per permettere la corretta
+visualizzazione della schermata di Ciao! Optical.</p>
+<p>Per avviare Ciao! Optical da iPad, cliccare <u>l'icona dell'app
+XStore</u> rossa nel riquadro in figura (NON l'icona Ciao!)</p>
+<h2 id="ricerca-cliente-esistente">Ricerca cliente esistente</h2>
+<p>Dopo aver eseguito l'accesso, cliccare sull'icona del lucchetto, la
+schermata che si apre è quella relativa alla ricerca cliente.</p>
+<p><img alt="screenshot procedura" src="img/image46.png" /></p>
+<p>È possibile accedere a questa pagina anche cliccando sull'icona del menù
+in basso a sinistra e successivamente su <em>Ricerca Cliente</em>.</p>
+<p><img alt="screenshot procedura" src="img/image47.png" /></p>
+<p><img alt="screenshot procedura" src="img/image49.png" /></p>
+<p><img alt="screenshot procedura" src="img/image50.png" /></p>
+<p>Per dare avvio alla ricerca, è necessario inserire almeno uno di
+questi campi:</p>
+<ul>
+<li>
+<p><u>ID Scontrino</u> (barcode presente sullo scontrino fiscale
+    scansionabile con il lettore ottico o con fotocamera iPad cliccando
+    su <em>Cattura ID scontrino</em>).</p>
+</li>
+<li>
+<p><u>Nome + Cognome</u> (almeno le prime 2 lettere del cognome
+    e la prima lettera del nome)</p>
+</li>
+<li>
+<p><u>Indirizzo e-mail</u></p>
+</li>
+<li>
+<p><u>Numero di telefono cellulare</u> (almeno le prime 7 cifre)</p>
+</li>
+</ul>
+<p><em>Il database vendite e clienti di Ciao! è condiviso tra tutti i negozi
+della rete Salmoiraghi &amp; Viganò e i Monobrand. Non è possibile visionare
+o ricercare vendite effettuate su negozi in franchising</em></p>
+<p><img alt="screenshot procedura" src="img/image51.png" /></p>
+<p><img alt="Immagine che contiene testo Descrizione generata automaticamente" src="img/image52.png" /></p>
+<p>Cliccare su <em>Cerca</em> per visualizzare i risultati della ricerca.</p>
+<p>Nel caso in cui le informazioni inserite non fossero sufficienti ad
+avviare la ricerca, compare un messaggio d'errore invitando a compilare
+i campi con almeno uno dei dati di cui sopra.</p>
+<p>Cliccare su <em>Cancella</em> per cancellare tutte le informazioni inserite e
+avviare una nuova ricerca. I risultati della ricerca vengono mostrati
+con il dettaglio del nome, cognome, e-mail e numero di telefono
+cellulare.</p>
+<p>Sulla sinistra è possibile aggiungere ulteriori criteri di ricerca
+(questa attività è utile per restringere il campo nel caso in cui la
+ricerca abbia restituito molti risultati).</p>
+<p>Nel caso in cui fosse necessario visualizzare più informazioni è
+possibile espandere i risultati della ricerca cliccando sui <em>3 puntini
+azzurri</em> sulla destra per vedere codice postale e data di nascita del
+cliente.</p>
+<p><img alt="screenshot procedura" src="img/image56.png" /></p>
+<p>Cliccare sull' icona <em>+</em> per duplicare l'anagrafica. Questo
+passaggio è utile nel caso in cui si volesse creare l'anagrafica di
+persone appartenenti allo stesso nucleo familiare partendo
+dall'anagrafica già esistente di uno di essi. Sarà infatti più veloce
+creare l'anagrafica cambiando solo i dati non comuni (dati comuni
+possono essere, ad esempio, la residenza ed il cognome).</p>
+<p>Per i passaggi necessari per la creazione di un nuovo cliente <em>(vedere
+capitolo 3.2)</em>.</p>
+<p><img alt="screenshot procedura" src="img/image57.png" /></p>
+<p>Dopo aver individuato il profilo d'interesse all'interno della lista
+proposta, cliccare sul nome per accedere alla scheda anagrafica. Il
+<em>Profilo Cliente</em> riassume tutti i dati relativi al cliente (anagrafici
+e medici).</p>
+<p><img alt="screenshot procedura" src="img/image58.png" /></p>
+<p>È possibile visionare le metodologie di contatto accordate dal cliente
+attraverso i consensi privacy nelle voci espresse tra i dati anagrafici
+del cliente sotto</p>
+<p><em>Acconsento All'invio E-mail</em> e / o <em>Acconsento All'invio di SMS</em>. In
+alternativa selezionare <em>Visualizza</em> nel box dedicato ai consensi
+privacy per vedere il documento sottoscritto dal cliente.</p>
+<p>Nel caso in cui si volesse modificare e/o visualizzare i flag dei
+consensi è possibile accedere alla sezione <em>Aggiorna Profilo</em>.</p>
+<p>Se la lista proposta non restituisce i risultati desiderati, è possibile
+creare un nuovo cliente selezionando <em>+Nuovo cliente</em>.</p>
+<p><img alt="screenshot procedura" src="img/image60.png" /></p>
+<p>Il passaggio dalla <em>Ricerca Cliente</em> è pensato per evitare la
+duplicazione di anagrafiche, per cui la creazione di un nuovo cliente
+può avvenire soltanto dopo averlo ricercato e non averlo trovato.</p>
+<p>Inoltre, si consiglia di controllare sempre che sia presente
+l\'informazione dell\'assicurazione, del codice fiscale e i flag dei
+consensi per le anagrafiche preesistenti (importate da Acuitas).</p>
+<h2 id="creazione-nuovo-cliente">Creazione nuovo cliente</h2>
+<p>Dopo aver cliccato su <em>+Nuovo cliente</em>, inserire le informazioni del
+cliente nella scheda <em>Aggiungi Cliente</em>:</p>
+<p><img alt="screenshot procedura" src="img/image62.png" /></p>
+<p><img alt="screenshot procedura" src="img/image63.png" /></p>
+<p><img alt="screenshot procedura" src="img/image64.png" /></p>
+<p><img alt="screenshot procedura" src="img/image65.png" /></p>
+<p><img alt="screenshot procedura" src="img/image63.png" /></p>
+<p><img alt="screenshot procedura" src="img/image63.png" /></p>
+<p>Le informazioni minime obbligatorie per poter creare un profilo
+cliente sono:</p>
+<p>A.  Nome + Cognome</p>
+<p>B.  Indirizzo e-mail (nel caso in cui il cliente non ne disponesse,
+    inserire <u>sempre</u> questo indirizzo e-mail fittizio:
+    <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;&#105;&#116;&#116;&#105;&#122;&#105;&#111;&#64;&#108;&#117;&#120;&#111;&#116;&#116;&#105;&#99;&#97;&#46;&#99;&#111;&#109;">&#102;&#105;&#116;&#116;&#105;&#122;&#105;&#111;&#64;&#108;&#117;&#120;&#111;&#116;&#116;&#105;&#99;&#97;&#46;&#99;&#111;&#109;</a> -- e assicurarsi di raccogliere almeno un
+    contatto alternativo per comunicare con il cliente)</p>
+<p>C.  Assicurazione (da compilare per tutti i clienti. Nel caso in cui vi
+    fosse un cliente senza assicurazione o con assicurazione non gestita
+    da noi selezionare i campi NO ASSICURAZIONE o ALTRA ASSICURAZIONE)</p>
+<p>Si consiglia comunque di aggiungere alle informazioni obbligatorie i
+dati di:</p>
+<ul>
+<li>
+<p>Numero di cellulare</p>
+</li>
+<li>
+<p>Codice fiscale (specialmente per prodotto vista)</p>
+</li>
+<li>
+<p>Residenza (utilizzati per la fattura, se inseriti in anagrafica
+    vengono recuperati automaticamente all'emissione della fattura senza
+    il bisogno di inserirli)</p>
+</li>
+</ul>
+<p>Tra le informazioni è possibile anche inserire il riferimento di un
+tutore legale. Cliccare su <em>Tutore legale</em> e poi su <em>Continua</em> per
+accedere alla pagina dove inserire le informazioni richieste per il
+tutore legale:</p>
+<p><img alt="screenshot procedura" src="img/image66.png" /></p>
+<p><img alt="screenshot procedura" src="img/image67.png" /></p>
+<p><img alt="screenshot procedura" src="img/image72.png" /></p>
+<p>Nel caso in cui venga aggiunto un tutore legale, inserire la mail del
+tutore legale sia nell'anagrafica del cliente sia in quella del tutore
+legale, in questo modo la mail di conferma per il trattamento dei dati
+personali è inviata alla mail del tutore.</p>
+<p>Per salvare l'anagrafica cliccare su <em>Aggiungi cliente.</em></p>
+<h2 id="raccolta-consensi-marketing">Raccolta consensi marketing</h2>
+<p><img alt="screenshot procedura" src="img/image73.png" /></p>
+<p>La raccolta dei consensi marketing èsempre richiesta durante la creazione di un nuovo cliente. Inoltre, è
+necessario raccogliere nuovamente i consensi nel caso di modifica di
+almeno uno dei flag di profilazione marketing o ricezione di
+comunicazioni (via e-mail o SMS). <em>Nel caso in cui venisse flaggato il
+consenso relativo alla ricezione di SMS, anche il numero di telefono
+diventa un dato obbligatorio da inserire per la creazione del cliente.</em></p>
+<p>A seconda dello strumento utilizzato è possibile raccogliere i consensi
+attraverso diverse modalità. Cliccare su <em>Più opzioni</em> per visualizzarle
+tutte.</p>
+<p>A.  <em>Modalità preferibile</em> - Firma digitale del documento (<em>opzione
+    disponibile solo su iPad</em>). Selezionare <em>Firma qui</em> per accede ad
+    una sezione riportante l'informativa privacy e la casella dove
+    firmare. I consensi sono già precompilati in base a quelli
+    selezionati nella creazione cliente</p>
+<blockquote>
+<p><img alt="screenshot procedura" src="img/image74.png" /><img alt="screenshot procedura" src="img/image78.png" /></p>
+</blockquote>
+<p><img alt="screenshot procedura" src="img/image80.png" /><img alt="Immagine che contiene testo Descrizione generata automaticamente" src="img/image81.png" /></p>
+<p>È possibile poi condividere l'informativa privacy con stampa cartacea o
+e-mail, cliccando rispettivamente su <em>Stampa</em> o su <em>e-mail</em> (il cliente
+riceve una e-mail con l'informativa privacy firmata in allegato). È
+inoltre possibile selezionare <em>Salva e Ritorna</em> per salvare
+l'informativa privacy firmata senza condividerla.</p>
+<p><img alt="Immagine che contiene testo Descrizione generata automaticamente" src="img/image84.png" /></p>
+<p><img alt="screenshot procedura" src="img/image85.png" /><img alt="Immagine che contiene testo Descrizione generata automaticamente" src="img/image86.png" /></p>
+<p>B.  Invio di una e-mail al cliente per la presa consenso.
+    All'interno dell'e-mail è presente un tasto che, se selezionato,
+    vale come conferma per i consensi. L'invio avviene dopo
+    l'inserimento di un check up o di un flusso di vendita/ordine<em>.</em> È
+    preferibile assicurarsi che il cliente rilasci il consenso
+    recuperando insieme la mail prima che il cliente esca dallo store.</p>
+<p>C.  Modalità non preferibile -- Stampa del documento e firma su
+    carta. Nel caso in cui non sia disponibile un iPad e il cliente non
+    abbia un indirizzo e-mail valido, sarà possibile acquisire il
+    consenso tramite firma dell'informativa in formato cartaceo
+    cliccando su <em>Stampa.</em></p>
+<p><u>Solo in questo ultimo caso è necessario archiviare la copia
+dell'informativa cartacea firmata dal cliente e conservarla per 10 anni
+in negozio.</u> Per tutte le altre modalità di raccolta del
+consenso l'informativa viene salvata all'interno del sistema. È sempre
+possibile verificare la modalità di raccolta del consenso all'interno
+del <em>Profilo Cliente</em>.</p>
+<p><img alt="screenshot procedura" src="img/image87.png" /></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Torna su
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "search.suggest", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

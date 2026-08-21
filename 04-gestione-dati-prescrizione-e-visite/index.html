@@ -1,0 +1,1109 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Base di conoscenza del sistema di cassa Ciao! e applicativi correlati">
+      
+      
+      
+      
+        <link rel="prev" href="../03-gestione-anagrafica-cliente/">
+      
+      
+        <link rel="next" href="../05-creazione-wo-frame-lenti-o-solo-lenti/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/dxc.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Gestione dati prescrizione e visite - KB Ciao! - Manuale Operativo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#gestione-dati-prescrizione-e-visite" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href=".." title="KB Ciao! - Manuale Operativo" class="md-header__button md-logo" aria-label="KB Ciao! - Manuale Operativo" data-md-component="logo">
+      
+  <img src="../assets/dxc.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            KB Ciao! - Manuale Operativo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Gestione dati prescrizione e visite
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="KB Ciao! - Manuale Operativo" class="md-nav__button md-logo" aria-label="KB Ciao! - Manuale Operativo" data-md-component="logo">
+      
+  <img src="../assets/dxc.png" alt="logo">
+
+    </a>
+    KB Ciao! - Manuale Operativo
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-sistema-di-cassa-e-applicativi-correlati/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sistema di cassa e applicativi correlati
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-operazioni-di-apertura-e-di-chiusura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operazioni di apertura e di chiusura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-gestione-anagrafica-cliente/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestione anagrafica cliente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestione dati prescrizione e visite
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestione dati prescrizione e visite
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creazione-lista-ottici-interni" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creazione lista ottici interni
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#registrazione-check-up-ricetta-prima-applicazione-lac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Registrazione Check-up -- Ricetta -- Prima applicazione LAC
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inserimento-dati-check-up-ricetta-prima-applicazione-lac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inserimento dati Check-up -- Ricetta -- Prima applicazione LAC
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-creazione-wo-frame-lenti-o-solo-lenti/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creazione WO Frame + Lenti o Solo Lenti
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-tracciatura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tracciatura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-ricezione-ordine-complete-job-ftc-lens-only-e-consegna-al-cl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ricezione ordine Complete Job -- FTC -- Lens Only e consegna al cliente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-vendita-occhiali-da-sole/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vendita occhiali da sole
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-vendita-lenti-a-contatto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vendita lenti a contatto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-vendita-accessori-ricambi-e-servizi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vendita accessori, ricambi e servizi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-one-hour-lenses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    One hour Lenses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-vendita-da-smart-shopper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vendita da Smart Shopper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-gestione-promozioni/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestione promozioni
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-14-gestione-servizi-post-vendita/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14 Gestione servizi post-vendita
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-15-reporting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15 Reporting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-16-elenco-ordini-attivo-archivio-e-caparra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16 Elenco Ordini: Attivo, Archivio e Caparra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-17-operative/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    17 Operative
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-18-tag-printing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    18 Tag printing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creazione-lista-ottici-interni" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creazione lista ottici interni
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#registrazione-check-up-ricetta-prima-applicazione-lac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Registrazione Check-up -- Ricetta -- Prima applicazione LAC
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inserimento-dati-check-up-ricetta-prima-applicazione-lac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inserimento dati Check-up -- Ricetta -- Prima applicazione LAC
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="gestione-dati-prescrizione-e-visite">Gestione dati prescrizione e visite</h1>
+<h2 id="creazione-lista-ottici-interni">Creazione lista ottici interni</h2>
+<p>Il sistema Ciao! Optical prevede una lista unica contenente sia i
+nominativi dei Medici oculisti esterni che quelli degli Ottici interni.</p>
+<p>Questa lista è soggetta a revisione mensile da parte dei team di sede
+per recepire tutti gli eventuali cambiamenti degli staff di negozio in
+termini di Ottici interni e inserire / modificare le informazioni in
+merito ai Medici oculisti esterni.</p>
+<p>Per poter facilitare la selezione nel campo <em>Nome</em> degli Ottici interni
+in fase di inserimento check-up o prima applicazione LAC, è possibile
+configurare una sotto lista di ottici interni specifica del negozio.
+Questa attività è svolta dallo Store Manager il primo giorno di
+installazione del nuovo sistema di cassa e ogni volta che vi sono
+aggiornamenti dello staff.</p>
+<p>Per creare la lista interna di negozio è necessario accedere alla
+sezione <em>Cerca</em> <em>Ottico.</em> Vi sono due modalità per accedervi:</p>
+<ul>
+<li>Accedendo ad un <em>Profilo</em> <em>Cliente</em>, cliccando su <em>Gestisci</em>
+    <em>Prescrizione</em> -&gt; <em>Gestisci lista ottici</em>.</li>
+</ul>
+<p><img alt="screenshot procedura" src="img/image88.png" /><img alt="screenshot procedura" src="img/image89.png" /></p>
+<ul>
+<li>Accedendo ad un <em>Profilo</em> <em>Cliente,</em> cliccando su <em>Servizi Ottici</em>
+    -&gt; <em>Gestisci Lista Ottici.</em></li>
+</ul>
+<p><img alt="screenshot procedura" src="img/image91.png" /></p>
+<p><img alt="screenshot procedura" src="img/image92.png" /></p>
+<p>Nella sezione <em>Cerca</em> <em>Ottico,</em> ricercare il nominativo dell'Ottico
+interno da inserire nella sotto lista e flaggare in sua corrispondenza
+come mostrato in figura. È possibile aggiungere altri ottici alla lista
+interna utilizzando sempre i campi sulla sinistra e cliccando su
+<em>Cerca</em>.</p>
+<p>Per ricercare ottici interni inserire in <em>Cognome e Nome</em> il cognome e
+il nome dell'ottico, mentre in <em>Posizione</em> inserire Ottico Interno come
+da esempio. Selezionare il record di interesse, cliccando su di esso e
+poi flaggare il tab per settare la persona come interna.</p>
+<p>Il terzo campo <em>Tipo di dottore</em>, NON VA COMPILATO.</p>
+<p><img alt="Immagine che contiene testo Descrizione generata automaticamente" src="img/image93.png" /></p>
+<p><img alt="screenshot procedura" src="img/image94.png" /></p>
+<h2 id="registrazione-check-up-ricetta-prima-applicazione-lac">Registrazione Check-up -- Ricetta -- Prima applicazione LAC</h2>
+<p>Il flusso di registrazione check-up, ricetta o prima applicazione LAC su
+Ciao! Optical condotto attraverso l'iPad è la modalità consigliata.</p>
+<p>Per inserire i dati di una ricetta, un check-up o di una prima
+applicazione LAC il processo da seguire è il seguente:</p>
+<ol>
+<li>
+<p>Registrazione degli stessi a sistema attraverso la sezione
+    <em>Ser.Ottici</em></p>
+</li>
+<li>
+<p>Inserimento dei dati del check-up, della ricetta o della prima
+    applicazione LAC nell'anagrafica del cliente attraverso <em>Gestione
+    Prescrizioni</em></p>
+</li>
+</ol>
+<p>Per registrare un check-up o una ricetta accedere alla sezione <em>Profilo</em>
+<em>Cliente</em> e selezionare in alto il tasto <em>Ser.Ottici</em>.</p>
+<p><img alt="screenshot procedura" src="img/image95.png" /></p>
+<p><img alt="screenshot procedura" src="img/image96.png" /></p>
+<p>Compilare i dati richiesti:</p>
+<ul>
+<li>
+<p>Stato del Cliente: indicare se il paziente è nuovo o meno (il
+    riferimento è al cliente come paziente. Se non è la prima volta che
+    il cliente effettua un check-up, ed è quindi già paziente per
+    Salmoiraghi&amp;Viganò, selezionare <em>Accertato</em>)</p>
+</li>
+<li>
+<p>Origine: Esterno (ricetta di medico oculista esterno); Interno
+    (controllo effettuato da ottico interno)</p>
+</li>
+<li>
+<p>Esame della vista: indicare se si sta registrando una ricetta
+    esterna o un check-up interno</p>
+</li>
+<li>
+<p>Valutazione delle lenti a contatto: selezionare Prima applicazione
+    LAC per registrare una Prima Applicazione LAC. In questo caso sarà
+    necessario selezionare anche la voce di Check-up nel campo Esame
+    della vista.</p>
+</li>
+</ul>
+<p>Solo dopo aver selezionato l'origine, sarà possibile inserire il nome
+dell'ottico interno o del medico oculista esterno nel campo <em>Nome</em>
+digitandone il valore. Dopo aver digitato le prime lettere il sistema
+propone una lista ristretta da cui selezionare.</p>
+<p>Se il medico oculista è già presente nella lista, è sufficiente
+selezionarne il nominativo per procedere nel flusso di vendita. Alcuni
+medici oculisti potrebbero essere presenti due volte nell'elenco. Quando
+il nome è associato a una città si fa riferimento allo studio privato,
+il secondo, invece, fa riferimento allo studio in cui opera.</p>
+<p><img alt="screenshot procedura" src="img/image97.png" /></p>
+<p>Per quanto riguarda la lista di Medici Oculisti esterni potrebbe esservi
+la necessità di segnalare una ricetta di Medico oculista non presente
+nella lista unica. In questo caso, in fase di registrazione della
+ricetta selezionare il valore nuovo medico oculista.</p>
+<p>In un secondo momento aprire un ticket GLPI categoria Sviluppo Business
+02. Classe Medica segnalando la presenza di un nuovo medico oculista con
+relativi dettagli. Con l'aggiornamento della lista il nominativo sarà
+visibile e sarà possibile aggiornare di conseguenza la prescrizione
+d'interesse.</p>
+<p>Una volta completati i campi non cliccare <em>Continua</em> ma selezionare la
+voce in basso a destra Aggiungi
+prescrizione<img alt="screenshot procedura" src="img/image98.png" />
+<img alt="screenshot procedura" src="img/image99.png" /></p>
+<p>Una volta completati i campi non cliccare <em>Continua</em> ma selezionare la
+voce in basso a destra Aggiungi prescrizione</p>
+<p><img alt="screenshot procedura" src="img/image99.png" /></p>
+<p>Cliccando su questo tasto il sistema vi riporta direttamente nella
+schermata per l\'inserimento della prescrizione. Il dato di origine e il
+nome dell\'ottico/ medico oculista <u>verranno riportati
+automaticamente</u> senza che vengano reinseriti.</p>
+<p>In più sempre in questa schermata potrete <u>aggiungere anche un\'altra
+prescrizione,</u> premendo il tasto <em>Aggiungere Altro</em>, che
+apre una nuova schermate di prescrizione.</p>
+<p><img alt="screenshot procedura" src="img/image101.png" /></p>
+<p><em>Per esempio, questo metodo potrebbe essere molto utile per un cliente
+progressivo per il quale vogliate creare più di una prescrizione
+(progressiva da lontano e da vicino)</em></p>
+<p>Una volta terminata la creazione delle prescrizioni che desiderate,
+premere sul tasto <em>Riprendi servizi medici</em>, per tornare alla
+schermata iniziale. Da qui procedete con continua alla fase di emissione
+di scontrino a zero cliccando su <em>Procedi al pagamento</em>.</p>
+<p><img alt="Immagine che contiene testo Descrizione generata automaticamente" src="img/image102.png" /></p>
+<p>Cliccare su <em>Transazione completata</em> per concludere la registrazione. Di
+conseguenza, cliccando su <em>Stampa</em> la scontrinatrice fiscale emette un
+documento gestionale riportante un servizio a valore 0. <u>Questo
+documento gestionale non è da consegnare al cliente</u>.</p>
+<p><img alt="screenshot procedura" src="img/image103.png" /></p>
+<p>Da iPad il flusso segue quanto riportato sopra. L'unica differenza è la
+posizione del tasto <em>Transazione Completata</em>: una volta su Xstore,
+cliccare sull'icona di menù in alto a destra e successivamente su
+<em>Transazione Completata</em></p>
+<p><img alt="screenshot procedura" src="img/image104.png" /></p>
+<h2 id="inserimento-dati-check-up-ricetta-prima-applicazione-lac">Inserimento dati Check-up -- Ricetta -- Prima applicazione LAC</h2>
+<p>Per procedere al secondo step del processo, che prevede l'inserimento
+dei dati medici nell'anagrafica del cliente, accedere al <em>Profilo</em>
+<em>Cliente</em>, cliccare su <em>Gestisci Prescrizioni</em> e successivamente su
+<em>Aggiungi prescrizione.</em></p>
+<p><img alt="screenshot procedura" src="img/image106.png" /></p>
+<p>Il primo campo da compilare è l'origine. Ci sono quattro opzioni:</p>
+<ul>
+<li>
+<p>Check up</p>
+</li>
+<li>
+<p>Lenti del cliente</p>
+</li>
+<li>
+<p>Ricetta esterna</p>
+</li>
+<li>
+<p>Plano</p>
+</li>
+</ul>
+<p>Successivamente compilare anche i seguenti campi:</p>
+<p><img alt="screenshot procedura" src="img/image107.png" /><img alt="screenshot procedura" src="img/image109.png" /><img alt="screenshot procedura" src="img/image110.png" />
+<img alt="screenshot procedura" src="img/image111.png" /></p>
+<p><img alt="Immagine che contiene testo Descrizione generata automaticamente" src="img/image112.png" /><img alt="screenshot procedura" src="img/image117.png" /><img alt="screenshot procedura" src="img/image118.png" /></p>
+<p>Cliccare su <em>Continua</em> per attivare la
+raccolta dei consensi medici. Il rilascio dei consensi privacy per i
+dati medici avviene via stampa o firma digitale (da iPad).</p>
+<p>Una volta aggiunta la nuova prescrizione, questa sarà visibile nello
+<em>storico delle prescrizioni del cliente</em> come mostrato in figura.</p>
+<p>Flaggando sulla sinistra in corrispondenza della prescrizione
+d'interesse è possibile attivare il tasto <em>Seleziona Prescrizione.</em></p>
+<p>Cliccarlo per selezionare una prescrizione per una vendita.</p>
+<p>Una prescrizione non può mai essere eliminata ma soltanto resa inattiva.
+Alla scadenza della prescrizione, la selezione diventa automaticamente
+inattiva.</p>
+<p><img alt="screenshot procedura" src="img/image119.png" /></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Torna su
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "search.suggest", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
